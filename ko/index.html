@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Koreada Ta&#x27;lim — Ikhlos Khamidov</title>
+<meta name="description" content="한국 대학 입학 서류 제출과 학생 비자를 도와드립니다. 어학연수, 학사, 석사, 직업교육 과정. 무료 상담.">
+<link rel="canonical" href="https://koreadatalim.com/ko/"><link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"><link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"><link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"><link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"><meta property="og:title" content="Koreada Ta&#x27;lim — Ikhlos Khamidov"><meta property="og:description" content="한국 대학 입학 서류 제출과 학생 비자를 도와드립니다. 어학연수, 학사, 석사, 직업교육 과정. 무료 상담."><meta property="og:url" content="https://koreadatalim.com/ko/"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<style>
+/* Layout: confident institutional page — photo-led hero with a visa form, a stats band, then alternating light/tinted sections ending in a navy footer. */
+:root{
+  --bg:#FFFFFF; --surface:#F3F6FB; --ink:#0F1B33; --muted:#5A6680; --line:#E1E7F0;
+  --brand:#1550D8; --brand-deep:#0C2F86; --brand-soft:#E6EEFE; --on-brand:#FFFFFF; --red:#D2394A;
+  --navy:#0B1A3A; --navy-ink:#C9D3E6;
+  --font:"Manrope","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;
+  --wrap:74rem; --r:14px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1222; --surface:#111B30; --ink:#E8EDF7; --muted:#9CA8BF; --line:#22304B;
+  --brand:#5B8CFF; --brand-deep:#9DB8FF; --brand-soft:#16244A; --on-brand:#081127; --red:#FF7D8C;
+  --navy:#070D1A; --navy-ink:#AEB9CF; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0B1222; --surface:#111B30; --ink:#E8EDF7; --muted:#9CA8BF; --line:#22304B;
+  --brand:#5B8CFF; --brand-deep:#9DB8FF; --brand-soft:#16244A; --on-brand:#081127; --red:#FF7D8C;
+  --navy:#070D1A; --navy-ink:#AEB9CF; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+:lang(ko) body, body:lang(ko){word-break:keep-all}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+h1,h2,h3{line-height:1.18;text-wrap:balance;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800}
+h3{font-weight:700}
+p{margin:0}
+.ic{width:1.5rem;height:1.5rem;flex:none}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:1.5rem;min-height:4.4rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-size:1.15rem;margin-right:auto;white-space:nowrap}
+.mark{width:2.1rem;height:2.1rem;border-radius:9px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:.95rem;font-weight:800}
+.nav{display:flex;gap:1.6rem;font-size:.95rem;font-weight:600}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--brand)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:.15rem;font-size:.8rem;font-weight:700}
+.langs a{text-decoration:none;padding:.25rem .6rem;border-radius:999px;color:var(--muted)}
+.langs a[aria-current="page"]{background:var(--brand);color:var(--on-brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;text-decoration:none;font-weight:700;border-radius:999px;padding:.9rem 1.5rem;font-size:1rem;border:1.5px solid transparent;transition:background .15s,border-color .15s}
+.btn .ic{width:1.15rem;height:1.15rem}
+.btn-primary{background:var(--brand);color:var(--on-brand)}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--bg)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.top .btn{padding:.6rem 1.1rem;font-size:.9rem}
+@media (max-width:960px){.nav{display:none}}
+@media (max-width:520px){.top .btn{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(2.5rem,6vw,4.5rem) clamp(3rem,6vw,4.5rem);background:linear-gradient(180deg,var(--brand-soft),var(--bg) 85%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero-text{min-width:0;display:grid;gap:1.4rem;justify-items:start}
+.tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:700;color:var(--brand);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem}
+.tag::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--brand)}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.5rem);font-weight:800}
+.hero-text>p{font-size:1.15rem;color:var(--muted);max-width:36rem}
+.actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.hero-media{position:relative;min-width:0;padding-bottom:2.5rem}
+.photo{border-radius:calc(var(--r) * 1.6);overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--surface);width:100%}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hero-media .photo img{object-position:70% 50%}
+.ph{display:grid;place-items:center;align-content:center;gap:.5rem;color:var(--muted);font-size:.9rem;font-weight:600;text-align:center;padding:1rem;
+  background:repeating-linear-gradient(45deg,var(--surface) 0 12px,color-mix(in srgb,var(--surface) 70%,var(--line)) 12px 24px);border:1.5px dashed var(--line)}
+.ph .ic{width:2rem;height:2rem;opacity:.7}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-media{max-width:30rem}}
+
+/* visa form overlapping the photo: the signature element */
+.visa{position:absolute;left:-1.5rem;bottom:0;width:min(19rem,85%);background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.2rem 1.2rem;
+  box-shadow:0 24px 48px -20px color-mix(in srgb,var(--navy) 45%,transparent)}
+.visa-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:.45rem;margin-bottom:.8rem;font-weight:800}
+.visa-head small{font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.stamps{display:flex;gap:.8rem;justify-content:space-between;align-items:center}
+.stamp{font-weight:800;text-transform:uppercase;letter-spacing:.06em;border:3px double currentColor;border-radius:8px;padding:.3rem .7rem;text-align:center;line-height:1.15;font-size:.95rem}
+.stamp small{display:block;font-size:.65rem;font-weight:700;letter-spacing:.1em}
+.stamp-no{color:var(--red);transform:rotate(-8deg);opacity:.85}
+.stamp-yes{color:var(--brand);transform:rotate(6deg);animation:press .55s cubic-bezier(.2,.9,.3,1.2) .5s both}
+@keyframes press{0%{opacity:0;transform:rotate(6deg) scale(1.8)}70%{opacity:1;transform:rotate(6deg) scale(.95)}100%{opacity:1;transform:rotate(6deg) scale(1)}}
+@media (prefers-reduced-motion: reduce){.stamp-yes{animation:none}}
+@media (max-width:860px){.visa{left:auto;right:-.5rem}}
+@media (max-width:480px){.visa{right:0}}
+
+/* stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;padding-block:2.2rem}
+.stat{display:grid;gap:.2rem;min-width:0}
+.stat b{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums;color:#fff}
+.stat span{color:var(--navy-ink);font-size:.95rem}
+@media (max-width:760px){.stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* sections */
+section{scroll-margin-top:5.5rem}
+.block{padding-block:clamp(3.5rem,8vw,6rem)}
+.block.alt{background:var(--surface)}
+.head{display:grid;gap:.7rem;margin-bottom:2.5rem;max-width:44rem}
+.head p{color:var(--muted);font-size:1.1rem}
+
+/* universities strip */
+.unis{padding-block:2.2rem;border-bottom:1px solid var(--line)}
+.unis h2{font-size:1rem;font-weight:700;color:var(--muted);text-align:center;margin-bottom:1.2rem;letter-spacing:0}
+.unis-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+.uni{display:grid;gap:.15rem;align-content:center;min-height:4.6rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--bg);min-width:0}
+.uni b{font-weight:800;font-size:.98rem;line-height:1.3}
+.uni span{color:var(--muted);font-size:.82rem}
+.unis-row img{max-height:3rem;margin-inline:auto;object-fit:contain;filter:grayscale(1);opacity:.8}
+@media (max-width:860px){.unis-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;display:grid;gap:.6rem;align-content:start;min-width:0}
+.card .ico{width:2.8rem;height:2.8rem;border-radius:11px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.card h3{font-size:1.1rem}
+.card p{color:var(--muted);font-size:.96rem}
+.card.featured{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.card.featured p{color:color-mix(in srgb,var(--on-brand) 82%,transparent)}
+.card.featured .ico{background:color-mix(in srgb,var(--on-brand) 18%,transparent);color:var(--on-brand)}
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 2.5rem}
+.why div{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;min-width:0}
+.why .ico{grid-row:span 2;width:3rem;height:3rem;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center}
+.why h3{font-size:1.1rem;align-self:end}
+.why p{color:var(--muted);font-size:.96rem}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.about-card{display:grid;gap:1rem;min-width:0;position:sticky;top:6rem}
+.about-card .photo{aspect-ratio:1;border-radius:50%;max-width:20rem;border:6px solid var(--brand-soft)}
+.about-card .who b{display:block;font-size:1.3rem;font-weight:800}
+.about-card .who span{color:var(--muted)}
+.about blockquote{margin:0;font-size:1.05rem;font-weight:600;line-height:1.55;padding:1.2rem 1.3rem;border-radius:var(--r);background:var(--brand-soft);color:var(--brand-deep)}
+.timeline{list-style:none;margin:0;padding:0;display:grid;min-width:0}
+.timeline li{display:grid;grid-template-columns:6.2rem 1fr;gap:1.2rem;padding-bottom:1.9rem;position:relative}
+.timeline li::before{content:"";position:absolute;left:6.8rem;top:.7rem;bottom:-.2rem;width:2px;background:var(--line)}
+.timeline li:last-child::before{display:none}
+.timeline .year{font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;padding-top:.05rem}
+.timeline .body{min-width:0;padding-left:1.3rem;position:relative}
+.timeline .body::before{content:"";position:absolute;left:-.42rem;top:.45rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--bg);border:3px solid var(--brand)}
+.timeline li.fail .body::before{border-color:var(--red)}
+.timeline li.fail .year{color:var(--red)}
+.timeline h3{font-size:1.15rem;margin-bottom:.2rem}
+.timeline p{color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about-card{position:static;max-width:26rem}}
+
+/* gallery */
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2rem) / 3);gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:1rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.gallery:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:var(--r)}
+.gallery .g{border-radius:var(--r);overflow:hidden;min-width:0;margin:0;position:relative;aspect-ratio:4/3;scroll-snap-align:start}
+.gallery .g img{width:100%;height:100%;object-fit:cover}
+.gallery figcaption{position:absolute;inset:auto 0 0 0;padding:1.8rem 1rem .8rem;font-size:.85rem;font-weight:600;line-height:1.35;color:#fff;
+  background:linear-gradient(transparent,rgba(8,14,30,.8))}
+@media (max-width:900px){.gallery{grid-auto-columns:calc((100% - 1rem) / 2)}}
+@media (max-width:560px){.gallery{grid-auto-columns:86%}}
+
+/* reviews */
+.reviews{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 4.2rem) / 4);gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.4rem .2rem 1.2rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.reviews:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:20px}
+.reviews .r{scroll-snap-align:start}
+.reviews .r{margin:0;display:grid;gap:.8rem;min-width:0}
+.reviews .r.ph{aspect-ratio:4/5;border-radius:24px}
+.r-open{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:zoom-in;background:var(--surface);
+  box-shadow:0 24px 44px -30px color-mix(in srgb,var(--navy) 55%,transparent);transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.r-open img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.r-open:hover{transform:translateY(-5px)}
+.r-open:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.r-zoom{position:absolute;right:.7rem;bottom:.7rem;background:rgba(8,14,30,.72);color:#fff;font-size:.78rem;font-weight:700;border-radius:999px;padding:.3rem .7rem;opacity:0;transition:opacity .2s}
+.r-open:hover .r-zoom,.r-open:focus-visible .r-zoom{opacity:1}
+.reviews figcaption{text-align:center;font-weight:700}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(6,10,22,.86);display:grid;place-items:center;padding:1.5rem}
+.lb img{max-width:min(36rem,100%);max-height:88vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb-x{position:absolute;top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;width:2.8rem;height:2.8rem;border-radius:50%;border:0;background:#fff;color:#0F1B33;font-size:1.6rem;cursor:pointer}
+@media (max-width:960px){.reviews{grid-auto-columns:calc((100% - 1.4rem) / 2)}}
+@media (max-width:480px){.reviews{grid-auto-columns:80%}}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem;counter-reset:s}
+.steps li{counter-increment:s;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:grid;gap:.5rem;align-content:start;min-width:0}
+.steps li::before{content:counter(s);width:2.3rem;height:2.3rem;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-weight:800}
+.steps h3{font-size:1.05rem}
+.steps p{color:var(--muted);font-size:.95rem}
+.honest{margin-top:1.5rem;display:flex;gap:.9rem;align-items:flex-start;border:1px solid var(--line);background:var(--bg);border-radius:var(--r);padding:1.1rem 1.3rem;color:var(--muted);max-width:52rem}
+.honest .ic{color:var(--brand);margin-top:.15rem}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* faq */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem)}
+.faq{display:grid;gap:.7rem;min-width:0}
+.faq details{border:1px solid var(--line);border-radius:var(--r);background:var(--bg);padding-inline:1.3rem}
+.faq summary{cursor:pointer;list-style:none;padding-block:1.1rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:500;color:var(--brand);font-size:1.5rem;line-height:1;flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--muted);padding-bottom:1.2rem}
+@media (max-width:860px){.faq-wrap{grid-template-columns:1fr}}
+
+/* cta band */
+.cta{padding-block:clamp(3rem,7vw,5rem)}
+.cta-box{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;border-radius:calc(var(--r) * 2);padding:clamp(2rem,5vw,3.5rem);display:grid;grid-template-columns:1.4fr auto;gap:2rem;align-items:center}
+.cta-box h2{color:#fff}
+.cta-box p{color:rgba(255,255,255,.85);margin-top:.7rem;font-size:1.1rem}
+.cta-box .btn-primary{background:#fff;color:#0C2F86}
+.cta-box .btn-primary:hover{background:#E6EEFE}
+.cta-box .btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.cta-box .btn-ghost:hover{border-color:#fff;color:#fff}
+@media (max-width:760px){.cta-box{grid-template-columns:1fr}}
+:root[data-theme="dark"] .cta-box, :root:not([data-theme="light"]) .cta-box{}
+
+/* footer */
+footer{background:var(--navy);color:var(--navy-ink);padding-block:3rem 2rem;font-size:.95rem}
+footer .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem}
+footer b{color:#fff;display:block;margin-bottom:.7rem}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+footer .brand{color:#fff;margin-bottom:.8rem}
+footer .bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding-top:1.5rem;font-size:.85rem}
+.sel{user-select:all}
+.muted-s{opacity:.7;font-size:.85em}
+@media (max-width:760px){footer .grid{grid-template-columns:1fr}}
+
+/* ---- centered section heads (results, services...) */
+.head.c{margin-inline:auto;text-align:center;justify-items:center}
+
+/* ---- universities marquee */
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.track{display:flex;width:max-content;animation:marq 38s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.set{display:flex;gap:.8rem;padding-right:.8rem}
+.set .uni{width:15.5rem;flex:none}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---- student results carousel */
+.slider{display:grid;grid-auto-flow:column;grid-auto-columns:min(54rem,92%);gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:.5rem .25rem 1.25rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.slider:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:24px}
+.student{--t1:#22C55E;--t2:#15A34A;position:relative;scroll-snap-align:start;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(1.25rem,3vw,2.25rem);
+  background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(1.25rem,3vw,2.25rem);min-width:0}
+.student.c-red{--t1:#F04438;--t2:#F97316}
+.student.c-dark{--t1:#111827;--t2:#3B4558}
+.student.c-blue{--t1:#2563EB;--t2:#1E3A8A}
+.badge{position:absolute;top:1rem;right:1rem;font-size:.75rem;font-weight:800;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:.15rem .6rem;background:var(--bg)}
+.doc{position:relative;aspect-ratio:3/4;max-width:100%;background:#fff;border-radius:4px;overflow:hidden;align-self:start;
+  box-shadow:0 22px 40px -22px rgba(15,27,51,.55),0 2px 6px rgba(15,27,51,.12);transform:rotate(-1.2deg);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.doc img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(.15)}
+.doc.ph{border-radius:4px;transform:rotate(-1.2deg)}
+.doc::after{content:"";position:absolute;left:0;bottom:0;width:30%;aspect-ratio:1;
+  background:linear-gradient(45deg,var(--surface) 0 50%,var(--t1) 50%,var(--t2) 100%);
+  box-shadow:6px -6px 14px -4px rgba(0,0,0,.28);border-top-right-radius:6px;transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.student:hover .doc{transform:rotate(0) translateY(-4px)}
+.student:hover .doc::after{width:38%}
+.s-body{display:grid;grid-template-rows:auto 1fr auto;gap:.9rem;min-width:0}
+.s-body h3{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800}
+.s-body p{color:var(--muted)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.tile{position:relative;min-height:8.5rem;border-radius:18px;padding:1.1rem 1.2rem;display:grid;align-content:end;gap:.15rem;color:#fff;
+  background:linear-gradient(135deg,var(--t1),var(--t2));overflow:hidden;min-width:0}
+.tile::after{content:"";position:absolute;top:.9rem;right:.9rem;width:.75rem;height:.75rem;border-radius:50%;background:rgba(255,255,255,.55)}
+.tile b{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:800;line-height:1.05;overflow-wrap:anywhere}
+.tile span{font-size:.9rem;opacity:.85}
+.slider:has(.student:only-child)+.slide-nav{display:none}
+.slide-nav{display:flex;justify-content:center;gap:.6rem;margin-top:.6rem}
+.nav-btn{width:3rem;height:3rem;border-radius:50%;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-size:1.15rem;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.nav-btn:hover{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.nav-btn:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+@media (max-width:720px){.student{grid-template-columns:1fr}.doc{max-width:15rem}}
+
+/* ---- motion */
+.card,.why>div,.steps li,.uni,.gallery .g img{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.card:hover,.steps li:hover{transform:translateY(-5px);box-shadow:0 22px 40px -26px color-mix(in srgb,var(--navy) 60%,transparent)}
+.gallery .g:hover img{transform:scale(1.04)}
+.btn{transition:background .2s,border-color .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.top{transition:box-shadow .3s}
+.top.scrolled{box-shadow:0 10px 30px -18px color-mix(in srgb,var(--navy) 50%,transparent)}
+.hero-text>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-text>*:nth-child(2){animation-delay:.08s}
+.hero-text>*:nth-child(3){animation-delay:.16s}
+.hero-text>*:nth-child(4){animation-delay:.24s}
+.hero-media{animation:rise .9s .18s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.totop{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.1rem;height:3.1rem;border-radius:14px;border:0;
+  background:var(--brand);color:var(--on-brand);font-size:1.3rem;font-weight:700;cursor:pointer;box-shadow:0 12px 26px -12px var(--brand);
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media (prefers-reduced-motion: reduce){
+  .track{animation:none;width:auto}.set{flex-wrap:wrap}.set[aria-hidden]{display:none}
+  .hero-text>*,.hero-media{animation:none}.rv{opacity:1;transform:none;transition:none}
+  .card:hover,.steps li:hover,.btn:hover,.student:hover .doc{transform:none}
+}
+
+/* ---- hero composition: student photo + boarding pass + proof chip + visa card */
+.hero-media{padding:0}
+.hero-media .photo{aspect-ratio:5/4;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--navy) 45%,transparent)}
+.hero-media .photo img{object-position:50% 55%}
+.pass{position:absolute;top:0;right:-1.25rem;width:min(17.5rem,74%);background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:.95rem 1.1rem;
+  box-shadow:0 24px 48px -22px color-mix(in srgb,var(--navy) 50%,transparent);transform:rotate(3deg);animation:float 6s ease-in-out infinite}
+.pass-top{display:flex;justify-content:space-between;font-size:.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;padding-bottom:.55rem;border-bottom:2px dashed var(--line)}
+.route{display:flex;align-items:center;justify-content:space-between;padding:.65rem 0 .5rem}
+.route b{font-size:1.85rem;font-weight:800;display:block;line-height:1;letter-spacing:.02em}
+.route small{color:var(--muted);font-size:.78rem}
+.route>div:last-child{text-align:right}
+.plane{color:var(--brand);flex:1;display:flex;align-items:center;gap:.35rem;margin-inline:.6rem}
+.plane::before,.plane::after{content:"";flex:1;border-top:2px dotted var(--line)}
+.pass-row{display:flex;justify-content:space-between;gap:1rem;font-size:.85rem;border-top:1px solid var(--line);padding-top:.5rem}
+.pass-row small{display:block;color:var(--muted);font-size:.7rem}
+.pass-row b{font-weight:800}
+.proof{position:absolute;left:-1.6rem;top:44%;display:flex;align-items:center;gap:.75rem;background:var(--bg);border:1px solid var(--line);border-radius:999px;
+  padding:.45rem 1.1rem .45rem .45rem;box-shadow:0 18px 40px -20px color-mix(in srgb,var(--navy) 50%,transparent);animation:float2 7s ease-in-out infinite}
+.avs{display:flex}
+.avs img{width:2.4rem;height:2.4rem;border-radius:50%;object-fit:cover;border:2px solid var(--bg);margin-left:-.65rem}
+.avs img:first-child{margin-left:0}
+.proof b{font-size:1.2rem;font-weight:800;display:block;line-height:1.05;color:var(--brand)}
+.proof span{font-size:.8rem;color:var(--muted)}
+@keyframes float{0%,100%{transform:rotate(3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-9px)}}
+@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@media (max-width:860px){.pass{right:-.25rem}.proof{left:-.25rem}}
+@media (max-width:480px){.pass{width:78%}.route b{font-size:1.5rem}.proof{top:auto;bottom:6.5rem}}
+@media (prefers-reduced-motion: reduce){.pass,.proof{animation:none}}
+/* ---- hero: rotating stack of approved visa documents */
+.docs{position:relative;aspect-ratio:1/0.95;width:100%;max-width:36rem;margin-inline:auto;isolation:isolate}
+.docs::before{content:"";position:absolute;inset:6% 4% 2%;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--brand) 18%,transparent),transparent 72%)}
+.dd{position:absolute;top:4%;left:25%;width:50%;margin:0;transform-origin:50% 90%;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1),opacity .9s ease,filter .9s ease}
+.dd img{display:block;width:100%;aspect-ratio:883/1245;object-fit:cover;object-position:top;background:#fff;border-radius:6px;
+  border:1px solid rgba(15,27,51,.08);box-shadow:0 40px 70px -34px rgba(15,27,51,.55),0 3px 12px rgba(15,27,51,.10)}
+.dd.s-c{z-index:3;transform:none;opacity:1}
+.dd.s-l{z-index:2;transform:translateX(-48%) translateY(5%) rotate(-9deg) scale(.9);opacity:1;filter:brightness(.97)}
+.dd.s-r{z-index:2;transform:translateX(48%) translateY(5%) rotate(9deg) scale(.9);opacity:1;filter:brightness(.97)}
+.dd.s-h{z-index:1;transform:translateY(8%) scale(.8);opacity:0}
+@media (prefers-reduced-motion: reduce){.dd{transition:none}}
+.docs-cap{text-align:center;color:var(--muted);font-size:.85rem;margin-top:.4rem}
+/* ---- video */
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.vcard{margin:0;display:grid;gap:.8rem;min-width:0}
+.vcard figcaption{font-weight:800;font-size:1.1rem;text-align:center}
+@media (max-width:760px){.videos{grid-template-columns:1fr}}
+.video{position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--navy);
+  box-shadow:0 40px 70px -40px color-mix(in srgb,var(--navy) 70%,transparent)}
+.video img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .4s}
+.video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,14,30,.55))}
+.video:hover img{transform:scale(1.03);filter:brightness(.9)}
+.play{position:absolute;left:50%;top:50%;z-index:2;width:5.2rem;height:5.2rem;margin:-2.6rem 0 0 -2.6rem;border-radius:50%;display:grid;place-items:center;
+  background:#fff;color:var(--brand);box-shadow:0 0 0 12px rgba(255,255,255,.22);transition:transform .3s,box-shadow .3s}
+.play svg{width:2rem;height:2rem;margin-left:.25rem}
+.video:hover .play{transform:scale(1.08);box-shadow:0 0 0 18px rgba(255,255,255,.18)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (max-width:520px){.play{width:4rem;height:4rem;margin:-2rem 0 0 -2rem}.play svg{width:1.5rem;height:1.5rem}}
+
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/ko/"><span class="mark">KT</span>Koreada Ta'lim</a>
+  <nav class="nav" aria-label="Menu"><a href="#xizmatlar">서비스</a><a href="#haqimda">소개</a><a href="#jarayon">진행 과정</a><a href="#savollar">자주 묻는 질문</a></nav>
+  <div class="langs" role="navigation" aria-label="언어"><a href="/" data-lang="uz" lang="uz" hreflang="uz" title="O&#x27;zbekcha">UZ</a><a href="/en/" data-lang="en" lang="en" hreflang="en" title="English">EN</a><a href="/ko/" data-lang="ko" lang="ko" hreflang="ko" title="한국어" aria-current="page">KO</a></div>
+  <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener">무료 상담</a>
+</div></header>
+
+<main>
+<section class="hero"><div class="wrap">
+  <div class="hero-text">
+    <h1>약속이 아닌, 허가된 비자</h1>
+    <p>이곳의 비자는 광고용 디자인이 아니라 저희 학생들의 실제 비자입니다. 지금까지 70명 이상의 학생을 최선을 다해 도와 왔습니다.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>무료 상담 신청</a>
+      <a class="btn btn-ghost" href="#xizmatlar">서비스</a>
+    </div>
+  </div>
+  <div class="hero-media">
+    <div class="docs" aria-label="우리 학생들"><figure class="dd s-l"><img src="/assets/hero-docs/07.jpg" alt="비자 서류"></figure><figure class="dd s-c"><img src="/assets/hero-docs/03.jpg" alt="비자 서류"></figure><figure class="dd s-r"><img src="/assets/hero-docs/05.jpg" alt="비자 서류"></figure><figure class="dd s-h"><img src="/assets/hero-docs/01.jpg" alt="비자 서류" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/06.jpg" alt="비자 서류" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/04.jpg" alt="비자 서류" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/02.jpg" alt="비자 서류" loading="lazy"></figure></div><p class="docs-cap">저희 학생들의 실제 비자입니다. 개인정보는 가렸습니다.</p>
+  </div>
+</div></section>
+
+<section class="stats" aria-label="Facts"><div class="wrap"><div class="stat"><b>2023</b><span>년부터 한국 유학 분야에서 활동</span></div><div class="stat"><b>2년+</b><span>대학 국제교류처 근무 경험</span></div><div class="stat"><b>70+</b><span>명의 학생을 도왔습니다</span></div><div class="stat"><b>무료</b><span>첫 상담</span></div></div></section>
+
+<section class="unis"><div class="wrap">
+  <h2>지원했던 대학교</h2>
+  <div class="marquee"><div class="track"><div class="set"><div class="uni"><b>Chungbuk National University</b><span lang="ko">충북대학교</span></div><div class="uni"><b>Seowon University</b><span lang="ko">서원대학교</span></div><div class="uni"><b>Chungbuk Provincial University</b><span lang="ko">충북도립대학교</span></div><div class="uni"><b>Kyonggi University</b><span lang="ko">경기대학교</span></div><div class="uni"><b>Yewon Arts University</b><span lang="ko">예원예술대학교</span></div><div class="uni"><b>Hoseo University</b><span lang="ko">호서대학교</span></div><div class="uni"><b>Gwangju Women&#x27;s University</b><span lang="ko">광주여자대학교</span></div><div class="uni"><b>Kongju National University</b><span lang="ko">국립공주대학교</span></div></div><div class="set" aria-hidden="true"><div class="uni"><b>Chungbuk National University</b><span lang="ko">충북대학교</span></div><div class="uni"><b>Seowon University</b><span lang="ko">서원대학교</span></div><div class="uni"><b>Chungbuk Provincial University</b><span lang="ko">충북도립대학교</span></div><div class="uni"><b>Kyonggi University</b><span lang="ko">경기대학교</span></div><div class="uni"><b>Yewon Arts University</b><span lang="ko">예원예술대학교</span></div><div class="uni"><b>Hoseo University</b><span lang="ko">호서대학교</span></div><div class="uni"><b>Gwangju Women&#x27;s University</b><span lang="ko">광주여자대학교</span></div><div class="uni"><b>Kongju National University</b><span lang="ko">국립공주대학교</span></div></div></div></div>
+</div></section>
+
+<section class="block" id="xizmatlar"><div class="wrap">
+  <div class="head c"><h2>서비스</h2><p>첫 지원부터 한국 도착까지.</p></div>
+  <div class="cards"><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M8 7h7"/></svg></span><h3>어학연수</h3><p>대학 한국어 과정(D-4) 입학 서류 제출.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/><path d="M22 9v6"/></svg></span><h3>학사</h3><p>대학과 전공 선택, 지원서와 자기소개서.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg></span><h3>석사</h3><p>과정 선택, 서류 준비와 전자비자.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span><h3>직업교육</h3><p>직업교육 과정 입학 서류 제출.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></span><h3>비자</h3><p>서류 준비와 점검, 실수를 미리 찾기.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 20 4-4-4-4"/><path d="M21 16H7"/></svg></span><h3>D-4에서 D-2로 변경</h3><p>한국 어학연수생의 학사 과정 진학.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><h3>공항 픽업과 숙소</h3><p>비자가 허가된 학생의 공항 픽업과 숙소.</p></div><div class="card featured"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg></span><h3>무료 상담</h3><p>상황을 함께 살펴보고 맞는 길을 고릅니다.</p></div></div>
+</div></section>
+
+<section class="block results" id="natijalar"><div class="wrap">
+  <div class="head c"><h2>우리 학생들</h2><p>하나를 보면 열을 안다고 하죠. 학생들의 결과를 확인하고 동기를 얻어 보세요</p></div>
+  <div class="slider" id="slider" data-auto tabindex="0"><article class="student c-green"><div class="doc"><img src="/assets/students/01.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Bahriddinov Asilbek</h3><p>잔고증명을 준비하고 여러 유학원과 상담한 뒤 저를 찾아왔습니다. 텔렉스 비자로 신청해 마지막 순서로 비자를 받았고, 지금은 남양주의 DK University에서 공부하고 있습니다.</p><div class="tiles"><div class="tile"><b>D-4</b><span>비자 종류</span></div><div class="tile"><b>DK University</b><span>대학교</span></div></div></div></article><article class="student c-red"><div class="doc"><img src="/assets/students/02.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Kodiraliev Doniyorbek</h3><p>어린 나이에도 해외 유학에 관심이 많았고, 형의 큰 도움으로 한국에 올 수 있었습니다. 텔렉스 비자를 순조롭게 받은 학생 중 한 명이며, 대전과학기술대학교(DIST)에 합격했습니다.</p><div class="tiles"><div class="tile"><b>D-4</b><span>비자 종류</span></div><div class="tile"><b>DIST</b><span>대학교</span></div></div></div></article><article class="student c-dark"><div class="doc"><img src="/assets/students/03.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Ahmadjonov Inomjon</h3><p>처음 상담할 때 한국어 공부를 열심히 하라고 조언했습니다. 토픽 3급을 받고 다시 연락해 왔고, 제가 다니는 서원대학교 경영학과에 함께 지원해 비자까지 받았습니다.</p><div class="tiles"><div class="tile"><b>D-2</b><span>비자 종류</span></div><div class="tile"><b>서원대학교</b><span>대학교</span></div></div></div></article><article class="student c-blue"><div class="doc"><img src="/assets/students/04.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Abdukholisov Khabibullo</h3><p>유럽을 여행한 뒤 한국에서 석사 과정을 하기로 결심했습니다. 서울의 수도국제대학원대학교에 지원했고, 길고 힘든 기다림 끝에 비자까지 받았습니다.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>비자 종류</span></div><div class="tile"><b>수도국제대학원대학교</b><span>대학교</span></div></div></div></article><article class="student c-green"><div class="doc"><img src="/assets/students/05.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Tursunov Asilbek</h3><p>나이가 많고 어학 성적이 없어 비자 가능성은 반반이었습니다. 하지만 서울 경기대학교에 합격해 지금은 공부를 시작했고, 비자가 나온 것이 아직도 믿기지 않는다고 합니다.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>비자 종류</span></div><div class="tile"><b>경기대학교</b><span>대학교</span></div></div></div></article><article class="student c-red"><div class="doc"><img src="/assets/students/06.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Nematov Abdijalil</h3><p>토픽 2급으로 직업교육 과정 대신 한국어를 제대로 배우고 싶어 어학연수를 선택했습니다. 서울 한국성서대학교 어학당에 입학했고, 이후 학사 과정에서 컴퓨터공학을 전공할 계획입니다. 토픽 성적이 있어 텔렉스가 아닌 일반 어학연수 비자를 받았습니다.</p><div class="tiles"><div class="tile"><b>D-4</b><span>비자 종류</span></div><div class="tile"><b>한국성서대학교</b><span>대학교</span></div></div></div></article><article class="student c-dark"><div class="doc"><img src="/assets/students/07.jpg" alt="비자 서류" loading="lazy"></div><div class="s-body"><h3>Khojimatova Nargizakhon</h3><p>IELTS 7점으로 어떤 명문 대학에 갈 수 있는지 보여 주는 좋은 사례입니다. 청주 충북대학교에 70% 장학금으로 합격했고 전자비자까지 받았습니다. 잔고증명과 연소득 서류 없이 간편한 방식으로 신청해 비자가 허가되었습니다.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>비자 종류</span></div><div class="tile"><b>충북대학교</b><span>대학교</span></div></div></div></article></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="slider" aria-label="이전">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="slider" aria-label="다음">→</button>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+  <div class="head c"><h2>저와 함께해야 하는 이유</h2></div>
+  <div class="why"><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"/></svg></span><h3>저도 외국인 유학생입니다</h3><p>한국에서 외국인 유학생으로 공부하고 있어 여러분이 걸어갈 길을 잘 압니다.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16"/><path d="M2 21h20"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M10 21v-4h4v4"/></svg></span><h3>현장 경험</h3><p>대학 국제교류처에서 2년 넘게 일하며 지원서가 어떻게 심사되는지 보았습니다.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><h3>한국 현지에서</h3><p>한국에서 살며 공부하고 있어 현지에서 바로 답해 드립니다.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h3>투명한 과정</h3><p>모든 단계를 미리 설명하며 비자 보장 같은 빈 약속은 하지 않습니다.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg></span><h3>편한 언어로</h3><p>우즈베크어, 영어, 한국어로 소통합니다.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 13.5 3 11l1.5-1.5 8 1L17 6a2.1 2.1 0 0 1 3 3l-4.5 4.5 1 8L15 23l-2.5-7.5L9 19v3l-1.5 1L6 19.5 2 18l1-1.5h3z"/></svg></span><h3>도착 후에도 함께</h3><p>공항 픽업, 숙소, D-4에서 D-2로의 변경까지.</p></div></div>
+</div></section>
+
+<section class="block" id="haqimda"><div class="wrap about">
+  <div class="about-card">
+    <div class="photo"><img src="/assets/founder.jpg" alt="Ikhlos Khamidov" loading="lazy"></div>
+    <div class="who"><b>Ikhlos Khamidov</b><span>여러분의 유학 도우미</span></div>
+    <blockquote>대학 안에서 일하며 지원서가 어떻게 심사되는지 직접 보았습니다. 이제 그 경험을 여러분의 길을 위해 씁니다.</blockquote>
+  </div>
+  <div>
+    <div class="head"><h2>소개</h2></div>
+    <ol class="timeline"><li><span class="year">타슈켄트</span><div class="body"><h3>리세 졸업과 영어 공부</h3><p>타슈켄트 세계경제외교대학교 부속 리세를 졸업하고, 영어를 공부하며 해외 유학을 준비했습니다.</p></div></li><li><span class="year">2024</span><div class="body"><h3>한국 대학에 지원해 입국</h3><p>서원대학교에서 글로벌커뮤니케이션과 경영학을 공부하고 있습니다.</p></div></li><li><span class="year">2년+</span><div class="body"><h3>대학 국제교류처 근무</h3><p>2년 넘게 외국인 유학생의 비자와 서류 업무를 담당했습니다. 이 기간 동안 5–6곳의 유학 컨설팅 회사 업무를 가까이에서 배웠습니다.</p></div></li><li><span class="year">현재</span><div class="body"><h3>여러분의 도우미</h3><p>한국, 우즈베키스탄, 그리고 다른 나라에서 공부를 이어 가고 싶은 분들을 돕고 있습니다.</p></div></li></ol>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+  <div class="head c"><h2>학생들과 함께</h2><p>한국에서의 학생 생활과 학생들과의 순간.</p></div>
+  <div class="gallery" id="gal" data-auto tabindex="0"><figure class="g"><img src="/assets/gallery/01.jpg" alt="충청북도 대표단 방문, 실크로드 국제대학교" loading="lazy"><figcaption>충청북도 대표단 방문, 실크로드 국제대학교</figcaption></figure><figure class="g"><img src="/assets/gallery/02.jpg" alt="충북도립대학교 한국어교육원 연수생 한국문화체험, 2024" loading="lazy"><figcaption>충북도립대학교 한국어교육원 연수생 한국문화체험, 2024</figcaption></figure><figure class="g"><img src="/assets/gallery/03.jpg" alt="학생들과 축제에서" loading="lazy"><figcaption>학생들과 축제에서</figcaption></figure><figure class="g"><img src="/assets/gallery/04.jpg" alt="등산" loading="lazy"><figcaption>등산</figcaption></figure><figure class="g"><img src="/assets/gallery/05.jpg" alt="학생들과 함께" loading="lazy"><figcaption>학생들과 함께</figcaption></figure><figure class="g"><img src="/assets/gallery/06.jpg" alt="한국 문화: 한복" loading="lazy"><figcaption>한국 문화: 한복</figcaption></figure><figure class="g"><img src="/assets/gallery/07.jpg" alt="서원대학교 K-culture 행사" loading="lazy"><figcaption>서원대학교 K-culture 행사</figcaption></figure><figure class="g"><img src="/assets/gallery/08.jpg" alt="인천공항 학생 환영, 충북도립대학교" loading="lazy"><figcaption>인천공항 학생 환영, 충북도립대학교</figcaption></figure><figure class="g"><img src="/assets/gallery/09.jpg" alt="충북도립대학교 유학생 K-가디언 발대식, 2024" loading="lazy"><figcaption>충북도립대학교 유학생 K-가디언 발대식, 2024</figcaption></figure><figure class="g"><img src="/assets/gallery/10.jpg" alt="중원대학교 본관" loading="lazy"><figcaption>중원대학교 본관</figcaption></figure><figure class="g"><img src="/assets/gallery/11.jpg" alt="아시아 쿠라쉬 선수권대회, 괴산, 2025" loading="lazy"><figcaption>아시아 쿠라쉬 선수권대회, 괴산, 2025</figcaption></figure><figure class="g"><img src="/assets/gallery/12.jpg" alt="아시아 쿠라쉬 선수권대회 팀과 함께" loading="lazy"><figcaption>아시아 쿠라쉬 선수권대회 팀과 함께</figcaption></figure><figure class="g"><img src="/assets/gallery/13.jpg" alt="학생들과 함께" loading="lazy"><figcaption>학생들과 함께</figcaption></figure></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="gal" aria-label="이전">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="gal" aria-label="다음">→</button>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="head c"><h2>영상으로 보는 대학교</h2><p>캠퍼스와 수업, 학생 생활을 짧게 만나 보세요.</p></div>
+  <div class="videos"><figure class="vcard"><a class="video" href="https://www.youtube.com/watch?v=OmocTjKvIxU" target="_blank" rel="noopener" data-yt="OmocTjKvIxU" data-embed="1" aria-label="영상 보기: 서원대학교"><img src="https://i.ytimg.com/vi/OmocTjKvIxU/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/OmocTjKvIxU/hqdefault.jpg'"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></a><figcaption>서원대학교</figcaption></figure><figure class="vcard"><a class="video" href="https://www.youtube.com/watch?v=BUjhjCUwHkw" target="_blank" rel="noopener" data-yt="BUjhjCUwHkw" data-embed="1" aria-label="영상 보기: 충북도립대학교"><img src="https://i.ytimg.com/vi/BUjhjCUwHkw/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/BUjhjCUwHkw/hqdefault.jpg'"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></a><figcaption>충북도립대학교</figcaption></figure></div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="head c"><h2>학생 후기</h2><p>저희와 함께 한국에 온 학생들의 이야기.</p></div>
+  <div class="reviews" id="rev" data-auto tabindex="0"><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/01.png" aria-label="전체 보기: 비자가 나온 날"><img src="/assets/review-cards/01.jpg" alt="비자가 나온 날" loading="lazy"><span class="r-zoom">전체 보기</span></button><figcaption>비자가 나온 날</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/02.png" aria-label="전체 보기: &quot;나왔어요, 감사합니다!&quot;"><img src="/assets/review-cards/02.jpg" alt="&quot;나왔어요, 감사합니다!&quot;" loading="lazy"><span class="r-zoom">전체 보기</span></button><figcaption>&quot;나왔어요, 감사합니다!&quot;</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/03.png" aria-label="전체 보기: 농담으로 결과를 알려 준 날"><img src="/assets/review-cards/03.jpg" alt="농담으로 결과를 알려 준 날" loading="lazy"><span class="r-zoom">전체 보기</span></button><figcaption>농담으로 결과를 알려 준 날</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/04.png" aria-label="전체 보기: &quot;형, 비자 나왔어요!&quot;"><img src="/assets/review-cards/04.jpg" alt="&quot;형, 비자 나왔어요!&quot;" loading="lazy"><span class="r-zoom">전체 보기</span></button><figcaption>&quot;형, 비자 나왔어요!&quot;</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/05.png" aria-label="전체 보기: 비자 허가, 이제 항공권 준비"><img src="/assets/review-cards/05.jpg" alt="비자 허가, 이제 항공권 준비" loading="lazy"><span class="r-zoom">전체 보기</span></button><figcaption>비자 허가, 이제 항공권 준비</figcaption></figure></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="rev" aria-label="이전">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="rev" aria-label="다음">→</button>
+  </div>
+</div></section>
+
+<section class="block alt" id="jarayon"><div class="wrap">
+  <div class="head c"><h2>진행 과정</h2></div>
+  <ol class="steps"><li><h3>무료 상담</h3><p>목표, 예산, 서류를 함께 살펴봅니다.</p></li><li><h3>과정 선택</h3><p>나에게 맞는 대학과 과정을 함께 고릅니다.</p></li><li><h3>서류와 지원</h3><p>서류를 준비하고 대학에 지원합니다.</p></li><li><h3>비자</h3><p>비자 서류를 점검하고 신청합니다.</p></li><li><h3>한국 도착</h3><p>공항 픽업과 정착을 도와드립니다.</p></li></ol>
+  <p class="honest"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>비자를 보장하지 않습니다. 최종 결정은 출입국 당국이 합니다. 저는 서류가 정확하고 빠짐없이 준비되도록 돕습니다.</span></p>
+</div></section>
+
+<section class="block" id="savollar"><div class="wrap faq-wrap">
+  <div class="head"><h2>자주 묻는 질문</h2></div>
+  <div class="faq"><details><summary>상담은 정말 무료인가요?</summary><p>네. 첫 상담은 무료입니다. 상황을 함께 살펴보고 어떤 길이 맞는지 알려 드립니다.</p></details><details><summary>비자를 보장하나요?</summary><p>아니요. 비자는 출입국 당국만 발급합니다. 저는 서류를 올바르게 준비하고 거절 위험을 줄이도록 돕습니다.</p></details><details><summary>이전에 비자가 거절되었다면요?</summary><p>많은 경우 다시 신청할 수 있습니다. 먼저 거절 사유를 함께 분석하고 다음 단계를 계획합니다.</p></details><details><summary>한국어를 몰라도 지원할 수 있나요?</summary><p>네. 많은 학생이 한국어 어학연수로 시작합니다. 상담에서 어떤 길이 맞는지 함께 정합니다.</p></details><details><summary>어떻게 연락하나요?</summary><p>텔레그램 봇이나 인스타그램 메시지로 연락해 주세요.</p></details></div>
+</div></section>
+
+<section class="cta"><div class="wrap"><div class="cta-box">
+  <div><h2>한 번의 상담으로 한국 유학을 시작하세요</h2><p>텔레그램으로 메시지를 보내 주세요. 상황을 살펴보고 맞는 길을 알려 드립니다.</p></div>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>텔레그램으로 문의</a>
+    <a class="btn btn-ghost" href="https://instagram.com/ikhlos_khamidov" target="_blank" rel="noopener">인스타그램</a>
+  </div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="grid">
+    <div><span class="brand"><span class="mark">KT</span>Koreada Ta'lim</span><p>한국 대학 입학 및 비자 상담. 어학연수, 학사, 석사, 직업교육 과정.</p></div>
+    <div><b>메뉴</b><ul><li><a href="#xizmatlar">서비스</a></li><li><a href="#haqimda">소개</a></li><li><a href="#jarayon">진행 과정</a></li><li><a href="#savollar">자주 묻는 질문</a></li></ul></div>
+    <div><b>연락처</b><ul>
+      <li><a href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener">Telegram: @KoreadaTalim_bot</a></li>
+      <li><a href="https://instagram.com/ikhlos_khamidov" target="_blank" rel="noopener">Instagram: @ikhlos_khamidov</a></li>
+      <li><a href="tel:+821083920305" class="sel">+82 10-8392-0305</a> <span class="muted-s">(Korea)</span></li>
+      <li class="sel">ikhlos@koreadatalim.com</li>
+    </ul></div>
+  </div>
+  <div class="bottom">© 2026 Koreada Ta'lim. Ikhlos Khamidov.</div>
+</div></footer>
+<button type="button" class="totop" aria-label="맨 위로">↑</button>
+<div class="lb" hidden><button type="button" class="lb-x" aria-label="닫기">×</button><img alt=""></div>
+<script>
+(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const top=document.querySelector('.top'),tt=document.querySelector('.totop');
+const onS=()=>{const y=scrollY;top&&top.classList.toggle('scrolled',y>8);tt&&tt.classList.toggle('show',y>700)};
+addEventListener('scroll',onS,{passive:true});onS();
+tt&&tt.addEventListener('click',()=>scrollTo({top:0,behavior:rm?'auto':'smooth'}));
+document.querySelectorAll('[data-slide]').forEach(b=>b.addEventListener('click',()=>{
+  const s=document.getElementById(b.dataset.target);if(!s)return;const c=s.firstElementChild;
+  const w=c?c.getBoundingClientRect().width+20:s.clientWidth;s.scrollBy({left:w*(+b.dataset.slide),behavior:rm?'auto':'smooth'})}));
+
+document.querySelectorAll('.docs').forEach(box=>{const docs=[...box.querySelectorAll('.dd')];
+if(docs.length>3&&!rm){let c=1;const n=docs.length;
+  const set=()=>docs.forEach((d,i)=>{d.classList.remove('s-l','s-c','s-r','s-h');
+    d.classList.add(i===c?'s-c':i===(c-1+n)%n?'s-l':i===(c+1)%n?'s-r':'s-h')});
+  setInterval(()=>{if(document.hidden)return;c=(c+1)%n;set()},5000);}});
+
+document.querySelectorAll('[data-auto]').forEach(sl=>{if(rm||sl.children.length<2)return;let hold=false;
+  ['mouseenter','focusin','touchstart'].forEach(e=>sl.addEventListener(e,()=>hold=true,{passive:true}));
+  ['mouseleave','focusout'].forEach(e=>sl.addEventListener(e,()=>hold=false));
+  sl.addEventListener('touchend',()=>setTimeout(()=>hold=false,4000),{passive:true});
+  setInterval(()=>{if(hold||document.hidden)return;const r=sl.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+    const w=sl.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(sl).columnGap||16);
+    if(sl.scrollLeft+sl.clientWidth>=sl.scrollWidth-8)sl.scrollTo({left:0,behavior:'smooth'});else sl.scrollBy({left:w,behavior:'smooth'})},5000)});
+
+document.querySelectorAll('.video[data-embed]').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();const f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+a.dataset.yt+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+  f.allowFullscreen=true;f.title=a.getAttribute('aria-label');a.replaceChildren(f);a.removeAttribute('href')})});
+
+const lb=document.querySelector('.lb');if(lb){const li=lb.querySelector('img');let back=null;
+  const close=()=>{lb.hidden=true;li.removeAttribute('src');back&&back.focus()};
+  document.querySelectorAll('.r-open').forEach(b=>b.addEventListener('click',()=>{back=b;li.src=b.dataset.full;li.alt=b.getAttribute('aria-label');lb.hidden=false;lb.querySelector('.lb-x').focus()}));
+  lb.addEventListener('click',e=>{if(e.target!==li)close()});addEventListener('keydown',e=>{if(e.key==='Escape'&&!lb.hidden)close()});}
+if(rm||!('IntersectionObserver' in window))return;
+document.querySelectorAll('.stat b').forEach(b=>{const m=b.textContent.trim().match(/^(\d+)(.*)$/);if(!m||+m[1]>999)return;
+  const n=+m[1],suf=m[2];const o=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;o.disconnect();let st=null;
+  const step=t=>{if(st===null)st=t;const p=Math.min(1,(t-st)/1000);b.textContent=Math.round(n*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step)});o.observe(b)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');io.unobserve(el);
+  setTimeout(()=>{el.classList.remove('rv','in');el.style.transitionDelay=''},1200)}),{rootMargin:'0px 0px -8% 0px'});
+const sel='.head,.card,.why>div,.steps li,.gallery .g,.student,.timeline li,.faq details,.reviews .r,.about-card,.honest,.cta-box';
+[...document.querySelectorAll(sel)].forEach((el,i)=>{if(el.getBoundingClientRect().top<innerHeight*.92)return;
+  el.classList.add('rv');el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+})();
+</script>
+</body>
+</html>
