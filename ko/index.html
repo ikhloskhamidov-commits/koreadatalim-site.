@@ -8,6 +8,8 @@
 <link rel="canonical" href="https://koreadatalim.com/ko/"><link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"><link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"><link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"><link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"><meta property="og:title" content="Koreada Ta&#x27;lim — Ikhlos Khamidov"><meta property="og:description" content="한국 대학 입학 서류 제출과 학생 비자를 도와드립니다. 어학연수, 학사, 석사, 직업교육 과정. 무료 상담."><meta property="og:url" content="https://koreadatalim.com/ko/"><meta property="og:type" content="website">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
+<script>(function(){var t=null;try{t=localStorage.getItem('kt-theme')}catch(e){}if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';document.documentElement.setAttribute('data-theme',t)})()</script>
+<meta name="theme-color" content="#FFFFFF">
 <style>
 /* Layout: confident institutional page — photo-led hero with a visa form, a stats band, then alternating light/tinted sections ending in a navy footer. */
 :root{
@@ -43,7 +45,7 @@ p{margin:0}
 
 /* header */
 .top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.top .wrap{display:flex;align-items:center;gap:1.5rem;min-height:4.4rem}
+.top .wrap{display:flex;align-items:center;gap:clamp(.6rem,2vw,1.5rem);min-height:4.4rem}
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-size:1.15rem;margin-right:auto;white-space:nowrap}
 .mark{width:2.1rem;height:2.1rem;border-radius:9px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:.95rem;font-weight:800}
 .nav{display:flex;gap:1.6rem;font-size:.95rem;font-weight:600}
@@ -59,6 +61,13 @@ p{margin:0}
 .btn-ghost{border-color:var(--line);color:var(--ink);background:var(--bg)}
 .btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
 .top .btn{padding:.6rem 1.1rem;font-size:.9rem}
+.theme{width:2.4rem;height:2.4rem;flex:none;display:grid;place-items:center;border-radius:50%;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer;padding:0;transition:background .2s,border-color .2s}
+.theme:hover{border-color:var(--brand);color:var(--brand)}
+.theme svg{width:1.15rem;height:1.15rem}
+.theme .i-sun{display:none}
+:root[data-theme="dark"] .theme .i-sun{display:block}:root[data-theme="dark"] .theme .i-moon{display:none}
+html.tt *,html.tt *::before,html.tt *::after{transition:background-color .35s,color .35s,border-color .35s!important}
+
 @media (max-width:960px){.nav{display:none}}
 @media (max-width:520px){.top .btn{display:none}}
 
@@ -380,6 +389,7 @@ footer .bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padd
   <a class="brand" href="/ko/"><span class="mark">KT</span>Koreada Ta'lim</a>
   <nav class="nav" aria-label="Menu"><a href="#xizmatlar">서비스</a><a href="#haqimda">소개</a><a href="#jarayon">진행 과정</a><a href="#savollar">자주 묻는 질문</a></nav>
   <div class="langs" role="navigation" aria-label="언어"><a href="/" data-lang="uz" lang="uz" hreflang="uz" title="O&#x27;zbekcha">UZ</a><a href="/en/" data-lang="en" lang="en" hreflang="en" title="English">EN</a><a href="/ko/" data-lang="ko" lang="ko" hreflang="ko" title="한국어" aria-current="page">KO</a></div>
+  <button type="button" class="theme" data-theme-toggle aria-pressed="false" aria-label="다크 모드"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
   <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener">무료 상담</a>
 </div></header>
 
@@ -518,6 +528,11 @@ document.querySelectorAll('[data-auto]').forEach(sl=>{if(rm||sl.children.length<
     const w=sl.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(sl).columnGap||16);
     if(sl.scrollLeft+sl.clientWidth>=sl.scrollWidth-8)sl.scrollTo({left:0,behavior:'smooth'});else sl.scrollBy({left:w,behavior:'smooth'})},5000)});
 
+(function(){const root=document.documentElement,mc=document.querySelector('meta[name="theme-color"]');
+  const apply=t=>{root.setAttribute('data-theme',t);document.querySelectorAll('[data-theme-toggle]').forEach(b=>b.setAttribute('aria-pressed',t==='dark'));if(mc)mc.content=t==='dark'?'#0B1222':'#FFFFFF'};
+  apply(root.getAttribute('data-theme')||'light');
+  document.querySelectorAll('[data-theme-toggle]').forEach(b=>b.addEventListener('click',()=>{const n=root.getAttribute('data-theme')==='dark'?'light':'dark';
+    root.classList.add('tt');apply(n);try{localStorage.setItem('kt-theme',n)}catch(e){}setTimeout(()=>root.classList.remove('tt'),450)}))})();
 const ytPlayers=[];let ytReady=null;
 function ytApi(){if(!ytReady)ytReady=new Promise(res=>{if(window.YT&&YT.Player)return res();const prev=window.onYouTubeIframeAPIReady;window.onYouTubeIframeAPIReady=()=>{prev&&prev();res()};const s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';document.head.appendChild(s)});return ytReady}
 function ytPauseAll(except){ytPlayers.forEach(p=>{if(p!==except&&p.pauseVideo)try{p.pauseVideo()}catch(e){}})}
