@@ -3,311 +3,539 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Koreada Ta'lim — bepul konsultatsiya</title>
-<meta name="description" content="Koreyada o'qish bo'yicha bepul konsultatsiya. Bir necha savolga javob bering — vaziyatingizni o'rganib, maslahat beraman.">
-<meta property="og:title" content="Koreada Ta'lim — bepul konsultatsiya">
-<meta property="og:description" content="Ikhlos Khamidov · Qabul va viza maslahatchisi">
-<meta property="og:type" content="website">
-<meta name="theme-color" content="#1F3F94">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231F3F94'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23CD2E3A'/%3E%3C/svg%3E">
-<style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}[hidden]{display:none!important}img{max-width:100%}</style>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Onest:wght@400;500;600&display=swap">
+<title>Koreada Ta&#x27;lim — Ikhlos Khamidov</title>
+<meta name="description" content="Koreya universitetlariga hujjat topshirish va viza olishda yordam. Til kursi, bakalavr, magistratura, kasbiy ta&#x27;lim. Bepul konsultatsiya.">
+<link rel="canonical" href="https://koreadatalim.com/"><link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"><link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"><link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"><link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"><meta property="og:title" content="Koreada Ta&#x27;lim — Ikhlos Khamidov"><meta property="og:description" content="Koreya universitetlariga hujjat topshirish va viza olishda yordam. Til kursi, bakalavr, magistratura, kasbiy ta&#x27;lim. Bepul konsultatsiya."><meta property="og:url" content="https://koreadatalim.com/"><meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@400;500;700;800&display=swap">
 <style>
-/* Layout: one question per screen, centered column, progress rail on top, Telegram hand-off at the end */
+/* Layout: confident institutional page — photo-led hero with a visa form, a stats band, then alternating light/tinted sections ending in a navy footer. */
 :root{
-  --bg:#F5F7FB; --surface:#FFFFFF; --fg:#121A2E; --muted:#5B6580;
-  --line:#DCE2EE; --blue:#1F3F94; --red:#CD2E3A; --blue-soft:#E6ECFA; --cloud:rgba(31,63,148,.10);
-  --display:"Unbounded","Onest",system-ui,sans-serif;
-  --body:"Onest",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --bg:#FFFFFF; --surface:#F3F6FB; --ink:#0F1B33; --muted:#5A6680; --line:#E1E7F0;
+  --brand:#1550D8; --brand-deep:#0C2F86; --brand-soft:#E6EEFE; --on-brand:#FFFFFF; --red:#D2394A;
+  --navy:#0B1A3A; --navy-ink:#C9D3E6;
+  --font:"Manrope","Noto Sans KR","Apple SD Gothic Neo",system-ui,sans-serif;
+  --wrap:74rem; --r:14px;
 }
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --bg:#0D1222; --surface:#151C31; --fg:#EEF1F8; --muted:#9AA4BF;
-  --line:#26304C; --blue:#7F9EF2; --red:#F0606B; --blue-soft:#1C2848; --cloud:rgba(127,158,242,.12); color-scheme:dark}}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0B1222; --surface:#111B30; --ink:#E8EDF7; --muted:#9CA8BF; --line:#22304B;
+  --brand:#5B8CFF; --brand-deep:#9DB8FF; --brand-soft:#16244A; --on-brand:#081127; --red:#FF7D8C;
+  --navy:#070D1A; --navy-ink:#AEB9CF; color-scheme:dark}}
 :root[data-theme="dark"]{
-  --bg:#0D1222; --surface:#151C31; --fg:#EEF1F8; --muted:#9AA4BF;
-  --line:#26304C; --blue:#7F9EF2; --red:#F0606B; --blue-soft:#1C2848; --cloud:rgba(127,158,242,.12); color-scheme:dark}
-html,body{height:100%}
-body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:17px;line-height:1.5}
-.wrap{min-height:100%;display:flex;flex-direction:column;max-width:560px;margin:0 auto;padding:20px 20px 32px;box-sizing:border-box}
-.top{display:flex;align-items:center;gap:12px;min-height:40px}
-.back{background:none;border:0;color:var(--muted);font:inherit;font-size:15px;cursor:pointer;padding:6px 0}
-.back:focus-visible,.opt:focus-visible,.btn:focus-visible,input:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
-.rail{flex:1;height:4px;background:var(--line);border-radius:4px;overflow:hidden}
-.rail i{display:block;height:100%;width:0;background:var(--blue);transition:width .35s ease}
-.count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;min-width:2.5em;text-align:right}
-main{flex:1;display:flex;flex-direction:column;justify-content:center;padding-block:24px}
-.step{animation:in .35s ease both}
-@keyframes in{from{opacity:.2;transform:translateY(10px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:reduce){.step{animation:none}.track i,.plane{transition:none}}
-.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--red);font-weight:600;margin:0 0 14px}
-h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,7.5vw,40px);line-height:1.15;margin:0 0 16px;text-wrap:balance}
-h1 em{font-style:normal;color:var(--blue)}
-h2{font-family:var(--display);font-weight:500;font-size:clamp(22px,5.8vw,28px);line-height:1.25;margin:0 0 22px;text-wrap:balance}
-.lead{color:var(--muted);margin:0 0 28px;max-width:34ch}
-.meta-unused{display:flex;flex-wrap:wrap;gap:8px 18px;color:var(--muted);font-size:14px;margin-top:22px}
-.meta span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:8px;vertical-align:middle}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--blue);color:var(--surface);border:0;border-radius:12px;padding:16px 26px;font:600 17px var(--body);cursor:pointer;text-decoration:none}
-.btn[disabled]{opacity:.4;cursor:default}
-.hint{font-size:13px;color:var(--muted);margin-left:14px}
-input{width:100%;box-sizing:border-box;font:500 22px var(--body);color:var(--fg);background:transparent;border:0;border-bottom:2px solid var(--line);padding:10px 2px;margin-bottom:24px}
-input:focus{border-color:var(--blue);outline:none}
-.opts{display:grid;gap:10px}
-.opt{display:flex;align-items:center;gap:14px;text-align:left;background:var(--surface);color:var(--fg);border:1.5px solid var(--line);border-radius:12px;padding:15px 16px;font:500 17px var(--body);cursor:pointer;transition:border-color .15s,background .15s}
-.opt:hover{border-color:var(--blue)}
-.opt.on{border-color:var(--blue);background:var(--blue-soft)}
-.key{flex:none;width:26px;height:26px;border-radius:7px;border:1.5px solid var(--line);display:grid;place-items:center;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
-.opt.on .key{background:var(--blue);border-color:var(--blue);color:var(--surface)}
-.summary{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:6px 18px;margin:0 0 24px}
-.row{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line);font-size:15px}
-.row:last-child{border-bottom:0}
-.row b{font-weight:600;text-align:right;min-width:0;overflow-wrap:anywhere}
-.row span{color:var(--muted)}
-.tg{width:100%;box-sizing:border-box;padding:18px}
-.tg svg{width:22px;height:22px;fill:currentColor}
-.small{font-size:14px;color:var(--muted);margin:14px 0 0;text-align:center}
-.sky{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden;color:var(--cloud)}
-.sky svg{position:absolute;height:auto;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;animation:drift 14s ease-in-out infinite alternate}
-.sky .c1{top:5%;right:-70px;width:min(62vw,300px)}
-.sky .c2{top:46%;left:-60px;width:min(42vw,180px);transform:scaleX(-1);animation-duration:18s}
-.sky .c3{bottom:5%;right:-40px;width:min(50vw,220px);animation-duration:16s}
-@keyframes drift{to{translate:-14px 0}}
-@media (prefers-reduced-motion:reduce){.sky svg{animation:none}}
-.wrap{position:relative;z-index:1}
-.stamp{display:inline-flex;flex-direction:column;align-items:center;gap:2px;border:2.5px solid var(--red);outline:1px solid var(--red);outline-offset:3px;color:var(--red);border-radius:10px;padding:10px 16px;margin:0 0 22px 4px;transform:rotate(-5deg);font-family:var(--display);text-transform:uppercase;letter-spacing:.08em;animation:stamp .45s cubic-bezier(.2,1.4,.4,1) both}
-.stamp b{font-size:13px;font-weight:700}
-.stamp span{font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:.04em;font-variant-numeric:tabular-nums;text-transform:none}
-@keyframes stamp{from{opacity:.25;transform:rotate(-5deg) scale(1.35)}to{opacity:1;transform:rotate(-5deg) scale(1)}}
-@media (prefers-reduced-motion:reduce){.stamp{animation:none}}
-.me{display:flex;align-items:center;gap:14px;margin:0 0 26px}
-.me img{width:56px;height:56px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 3px var(--surface),0 0 0 4px var(--line)}
-.me b{display:block;font-weight:600;font-size:16px}
-.me span{font-size:14px;color:var(--muted)}
-.route{flex:1;display:flex;align-items:center;gap:10px;font-size:12px;font-weight:600;letter-spacing:.06em;color:var(--muted)}
-.track{position:relative;flex:1;height:22px}
-.track::before{content:"";position:absolute;left:0;right:0;top:50%;border-top:2px dotted var(--line)}
-.track i{position:absolute;left:0;top:50%;height:2px;margin-top:-1px;width:0;background:var(--blue);transition:width .5s ease}
-.plane{position:absolute;top:50%;left:0;width:22px;height:22px;margin:-11px 0 0 -11px;color:var(--blue);transition:left .5s ease}
-.plane svg{width:100%;height:100%;fill:currentColor;transform:rotate(90deg)}
-.route .kr{color:var(--red)}
-.skip{background:none;border:1.5px dashed var(--line);color:var(--muted);border-radius:12px;padding:13px 18px;font:500 16px var(--body);cursor:pointer;margin-top:10px}
-.skip:hover{border-color:var(--blue);color:var(--fg)}
-.field{margin-bottom:6px}
-.seg{display:inline-flex;gap:4px;padding:4px;background:var(--blue-soft);border-radius:10px;margin:4px 0 2px}
-.seg button{border:0;background:none;color:var(--muted);font:600 14px var(--body);padding:8px 14px;border-radius:7px;cursor:pointer}
-.seg button.on{background:var(--surface);color:var(--fg);box-shadow:0 1px 3px rgba(0,0,0,.12)}
-.seg button:focus-visible{outline:3px solid var(--blue);outline-offset:1px}
-.field label{display:block;font-size:14px;color:var(--muted);font-weight:600}
-.brand{font-size:13px;color:var(--muted);text-align:center}
+  --bg:#0B1222; --surface:#111B30; --ink:#E8EDF7; --muted:#9CA8BF; --line:#22304B;
+  --brand:#5B8CFF; --brand-deep:#9DB8FF; --brand-soft:#16244A; --on-brand:#081127; --red:#FF7D8C;
+  --navy:#070D1A; --navy-ink:#AEB9CF; color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font);font-size:1.0625rem;line-height:1.65;-webkit-font-smoothing:antialiased}
+:lang(ko) body, body:lang(ko){word-break:keep-all}
+a{color:inherit}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:6px}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:clamp(1rem,4vw,2rem)}
+h1,h2,h3{line-height:1.18;text-wrap:balance;margin:0;letter-spacing:-.015em}
+h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800}
+h3{font-weight:700}
+p{margin:0}
+.ic{width:1.5rem;height:1.5rem;flex:none}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;gap:1.5rem;min-height:4.4rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-weight:800;font-size:1.15rem;margin-right:auto;white-space:nowrap}
+.mark{width:2.1rem;height:2.1rem;border-radius:9px;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-size:.95rem;font-weight:800}
+.nav{display:flex;gap:1.6rem;font-size:.95rem;font-weight:600}
+.nav a{text-decoration:none;color:var(--muted)}
+.nav a:hover{color:var(--brand)}
+.langs{display:flex;border:1px solid var(--line);border-radius:999px;padding:.15rem;font-size:.8rem;font-weight:700}
+.langs a{text-decoration:none;padding:.25rem .6rem;border-radius:999px;color:var(--muted)}
+.langs a[aria-current="page"]{background:var(--brand);color:var(--on-brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.55rem;text-decoration:none;font-weight:700;border-radius:999px;padding:.9rem 1.5rem;font-size:1rem;border:1.5px solid transparent;transition:background .15s,border-color .15s}
+.btn .ic{width:1.15rem;height:1.15rem}
+.btn-primary{background:var(--brand);color:var(--on-brand)}
+.btn-primary:hover{background:var(--brand-deep)}
+.btn-ghost{border-color:var(--line);color:var(--ink);background:var(--bg)}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand)}
+.top .btn{padding:.6rem 1.1rem;font-size:.9rem}
+@media (max-width:960px){.nav{display:none}}
+@media (max-width:520px){.top .btn{display:none}}
+
+/* hero */
+.hero{padding-block:clamp(2.5rem,6vw,4.5rem) clamp(3rem,6vw,4.5rem);background:linear-gradient(180deg,var(--brand-soft),var(--bg) 85%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.hero-text{min-width:0;display:grid;gap:1.4rem;justify-items:start}
+.tag{display:inline-flex;align-items:center;gap:.5rem;font-size:.9rem;font-weight:700;color:var(--brand);background:var(--bg);border:1px solid var(--line);border-radius:999px;padding:.35rem .9rem}
+.tag::before{content:"";width:.45rem;height:.45rem;border-radius:50%;background:var(--brand)}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.5rem);font-weight:800}
+.hero-text>p{font-size:1.15rem;color:var(--muted);max-width:36rem}
+.actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.hero-media{position:relative;min-width:0;padding-bottom:2.5rem}
+.photo{border-radius:calc(var(--r) * 1.6);overflow:hidden;aspect-ratio:4/5;max-width:100%;background:var(--surface);width:100%}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hero-media .photo img{object-position:70% 50%}
+.ph{display:grid;place-items:center;align-content:center;gap:.5rem;color:var(--muted);font-size:.9rem;font-weight:600;text-align:center;padding:1rem;
+  background:repeating-linear-gradient(45deg,var(--surface) 0 12px,color-mix(in srgb,var(--surface) 70%,var(--line)) 12px 24px);border:1.5px dashed var(--line)}
+.ph .ic{width:2rem;height:2rem;opacity:.7}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr}.hero-media{max-width:30rem}}
+
+/* visa form overlapping the photo: the signature element */
+.visa{position:absolute;left:-1.5rem;bottom:0;width:min(19rem,85%);background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.1rem 1.2rem 1.2rem;
+  box-shadow:0 24px 48px -20px color-mix(in srgb,var(--navy) 45%,transparent)}
+.visa-head{display:flex;justify-content:space-between;align-items:baseline;border-bottom:2px solid var(--ink);padding-bottom:.45rem;margin-bottom:.8rem;font-weight:800}
+.visa-head small{font-weight:600;color:var(--muted);font-variant-numeric:tabular-nums}
+.stamps{display:flex;gap:.8rem;justify-content:space-between;align-items:center}
+.stamp{font-weight:800;text-transform:uppercase;letter-spacing:.06em;border:3px double currentColor;border-radius:8px;padding:.3rem .7rem;text-align:center;line-height:1.15;font-size:.95rem}
+.stamp small{display:block;font-size:.65rem;font-weight:700;letter-spacing:.1em}
+.stamp-no{color:var(--red);transform:rotate(-8deg);opacity:.85}
+.stamp-yes{color:var(--brand);transform:rotate(6deg);animation:press .55s cubic-bezier(.2,.9,.3,1.2) .5s both}
+@keyframes press{0%{opacity:0;transform:rotate(6deg) scale(1.8)}70%{opacity:1;transform:rotate(6deg) scale(.95)}100%{opacity:1;transform:rotate(6deg) scale(1)}}
+@media (prefers-reduced-motion: reduce){.stamp-yes{animation:none}}
+@media (max-width:860px){.visa{left:auto;right:-.5rem}}
+@media (max-width:480px){.visa{right:0}}
+
+/* stats */
+.stats{background:var(--navy);color:#fff}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1.5rem;padding-block:2.2rem}
+.stat{display:grid;gap:.2rem;min-width:0}
+.stat b{font-size:clamp(1.8rem,3.4vw,2.5rem);font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums;color:#fff}
+.stat span{color:var(--navy-ink);font-size:.95rem}
+@media (max-width:760px){.stats .wrap{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* sections */
+section{scroll-margin-top:5.5rem}
+.block{padding-block:clamp(3.5rem,8vw,6rem)}
+.block.alt{background:var(--surface)}
+.head{display:grid;gap:.7rem;margin-bottom:2.5rem;max-width:44rem}
+.head p{color:var(--muted);font-size:1.1rem}
+
+/* universities strip */
+.unis{padding-block:2.2rem;border-bottom:1px solid var(--line)}
+.unis h2{font-size:1rem;font-weight:700;color:var(--muted);text-align:center;margin-bottom:1.2rem;letter-spacing:0}
+.unis-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.8rem}
+.uni{display:grid;gap:.15rem;align-content:center;min-height:4.6rem;padding:.8rem 1rem;border:1px solid var(--line);border-radius:12px;background:var(--bg);min-width:0}
+.uni b{font-weight:800;font-size:.98rem;line-height:1.3}
+.uni span{color:var(--muted);font-size:.82rem}
+.unis-row img{max-height:3rem;margin-inline:auto;object-fit:contain;filter:grayscale(1);opacity:.8}
+@media (max-width:860px){.unis-row{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.card{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.4rem;display:grid;gap:.6rem;align-content:start;min-width:0}
+.card .ico{width:2.8rem;height:2.8rem;border-radius:11px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center}
+.card h3{font-size:1.1rem}
+.card p{color:var(--muted);font-size:.96rem}
+.card.featured{background:var(--brand);border-color:var(--brand);color:var(--on-brand)}
+.card.featured p{color:color-mix(in srgb,var(--on-brand) 82%,transparent)}
+.card.featured .ico{background:color-mix(in srgb,var(--on-brand) 18%,transparent);color:var(--on-brand)}
+@media (max-width:1000px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:520px){.cards{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem 2.5rem}
+.why div{display:grid;grid-template-columns:auto 1fr;gap:.2rem 1rem;min-width:0}
+.why .ico{grid-row:span 2;width:3rem;height:3rem;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center}
+.why h3{font-size:1.1rem;align-self:end}
+.why p{color:var(--muted);font-size:.96rem}
+@media (max-width:900px){.why{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* about */
+.about{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.about-card{display:grid;gap:1rem;min-width:0;position:sticky;top:6rem}
+.about-card .photo{aspect-ratio:1;border-radius:50%;max-width:20rem;border:6px solid var(--brand-soft)}
+.about-card .who b{display:block;font-size:1.3rem;font-weight:800}
+.about-card .who span{color:var(--muted)}
+.about blockquote{margin:0;font-size:1.05rem;font-weight:600;line-height:1.55;padding:1.2rem 1.3rem;border-radius:var(--r);background:var(--brand-soft);color:var(--brand-deep)}
+.timeline{list-style:none;margin:0;padding:0;display:grid;min-width:0}
+.timeline li{display:grid;grid-template-columns:6.2rem 1fr;gap:1.2rem;padding-bottom:1.9rem;position:relative}
+.timeline li::before{content:"";position:absolute;left:6.8rem;top:.7rem;bottom:-.2rem;width:2px;background:var(--line)}
+.timeline li:last-child::before{display:none}
+.timeline .year{font-weight:800;color:var(--brand);font-variant-numeric:tabular-nums;padding-top:.05rem}
+.timeline .body{min-width:0;padding-left:1.3rem;position:relative}
+.timeline .body::before{content:"";position:absolute;left:-.42rem;top:.45rem;width:.8rem;height:.8rem;border-radius:50%;background:var(--bg);border:3px solid var(--brand)}
+.timeline li.fail .body::before{border-color:var(--red)}
+.timeline li.fail .year{color:var(--red)}
+.timeline h3{font-size:1.15rem;margin-bottom:.2rem}
+.timeline p{color:var(--muted)}
+@media (max-width:860px){.about{grid-template-columns:1fr}.about-card{position:static;max-width:26rem}}
+
+/* gallery */
+.gallery{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 2rem) / 3);gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding-bottom:1rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.gallery:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:var(--r)}
+.gallery .g{border-radius:var(--r);overflow:hidden;min-width:0;margin:0;position:relative;aspect-ratio:4/3;scroll-snap-align:start}
+.gallery .g img{width:100%;height:100%;object-fit:cover}
+.gallery figcaption{position:absolute;inset:auto 0 0 0;padding:1.8rem 1rem .8rem;font-size:.85rem;font-weight:600;line-height:1.35;color:#fff;
+  background:linear-gradient(transparent,rgba(8,14,30,.8))}
+@media (max-width:900px){.gallery{grid-auto-columns:calc((100% - 1rem) / 2)}}
+@media (max-width:560px){.gallery{grid-auto-columns:86%}}
+
+/* reviews */
+.reviews{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 4.2rem) / 4);gap:1.4rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.4rem .2rem 1.2rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.reviews:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:20px}
+.reviews .r{scroll-snap-align:start}
+.reviews .r{margin:0;display:grid;gap:.8rem;min-width:0}
+.reviews .r.ph{aspect-ratio:4/5;border-radius:24px}
+.r-open{position:relative;display:block;width:100%;padding:0;border:1px solid var(--line);border-radius:20px;overflow:hidden;cursor:zoom-in;background:var(--surface);
+  box-shadow:0 24px 44px -30px color-mix(in srgb,var(--navy) 55%,transparent);transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.r-open img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+.r-open:hover{transform:translateY(-5px)}
+.r-open:focus-visible{outline:3px solid var(--brand);outline-offset:3px}
+.r-zoom{position:absolute;right:.7rem;bottom:.7rem;background:rgba(8,14,30,.72);color:#fff;font-size:.78rem;font-weight:700;border-radius:999px;padding:.3rem .7rem;opacity:0;transition:opacity .2s}
+.r-open:hover .r-zoom,.r-open:focus-visible .r-zoom{opacity:1}
+.reviews figcaption{text-align:center;font-weight:700}
+.lb{position:fixed;inset:0;z-index:50;background:rgba(6,10,22,.86);display:grid;place-items:center;padding:1.5rem}
+.lb img{max-width:min(36rem,100%);max-height:88vh;border-radius:14px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
+.lb-x{position:absolute;top:calc(1rem + env(safe-area-inset-top,0px));right:1rem;width:2.8rem;height:2.8rem;border-radius:50%;border:0;background:#fff;color:#0F1B33;font-size:1.6rem;cursor:pointer}
+@media (max-width:960px){.reviews{grid-auto-columns:calc((100% - 1.4rem) / 2)}}
+@media (max-width:480px){.reviews{grid-auto-columns:80%}}
+
+/* process */
+.steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1rem;counter-reset:s}
+.steps li{counter-increment:s;background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:1.3rem;display:grid;gap:.5rem;align-content:start;min-width:0}
+.steps li::before{content:counter(s);width:2.3rem;height:2.3rem;border-radius:50%;background:var(--brand);color:var(--on-brand);display:grid;place-items:center;font-weight:800}
+.steps h3{font-size:1.05rem}
+.steps p{color:var(--muted);font-size:.95rem}
+.honest{margin-top:1.5rem;display:flex;gap:.9rem;align-items:flex-start;border:1px solid var(--line);background:var(--bg);border-radius:var(--r);padding:1.1rem 1.3rem;color:var(--muted);max-width:52rem}
+.honest .ic{color:var(--brand);margin-top:.15rem}
+@media (max-width:1000px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:480px){.steps{grid-template-columns:1fr}}
+
+/* faq */
+.faq-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem)}
+.faq{display:grid;gap:.7rem;min-width:0}
+.faq details{border:1px solid var(--line);border-radius:var(--r);background:var(--bg);padding-inline:1.3rem}
+.faq summary{cursor:pointer;list-style:none;padding-block:1.1rem;font-weight:700;display:flex;justify-content:space-between;gap:1rem;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-weight:500;color:var(--brand);font-size:1.5rem;line-height:1;flex:none}
+.faq details[open] summary::after{content:"−"}
+.faq details p{color:var(--muted);padding-bottom:1.2rem}
+@media (max-width:860px){.faq-wrap{grid-template-columns:1fr}}
+
+/* cta band */
+.cta{padding-block:clamp(3rem,7vw,5rem)}
+.cta-box{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;border-radius:calc(var(--r) * 2);padding:clamp(2rem,5vw,3.5rem);display:grid;grid-template-columns:1.4fr auto;gap:2rem;align-items:center}
+.cta-box h2{color:#fff}
+.cta-box p{color:rgba(255,255,255,.85);margin-top:.7rem;font-size:1.1rem}
+.cta-box .btn-primary{background:#fff;color:#0C2F86}
+.cta-box .btn-primary:hover{background:#E6EEFE}
+.cta-box .btn-ghost{background:transparent;border-color:rgba(255,255,255,.5);color:#fff}
+.cta-box .btn-ghost:hover{border-color:#fff;color:#fff}
+@media (max-width:760px){.cta-box{grid-template-columns:1fr}}
+:root[data-theme="dark"] .cta-box, :root:not([data-theme="light"]) .cta-box{}
+
+/* footer */
+footer{background:var(--navy);color:var(--navy-ink);padding-block:3rem 2rem;font-size:.95rem}
+footer .grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:2rem}
+footer b{color:#fff;display:block;margin-bottom:.7rem}
+footer a{text-decoration:none}
+footer a:hover{color:#fff}
+footer ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem}
+footer .brand{color:#fff;margin-bottom:.8rem}
+footer .bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:2.5rem;padding-top:1.5rem;font-size:.85rem}
+.sel{user-select:all}
+.muted-s{opacity:.7;font-size:.85em}
+@media (max-width:760px){footer .grid{grid-template-columns:1fr}}
+
+/* ---- centered section heads (results, services...) */
+.head.c{margin-inline:auto;text-align:center;justify-items:center}
+
+/* ---- universities marquee */
+.marquee{overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.track{display:flex;width:max-content;animation:marq 38s linear infinite}
+.marquee:hover .track{animation-play-state:paused}
+.set{display:flex;gap:.8rem;padding-right:.8rem}
+.set .uni{width:15.5rem;flex:none}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ---- student results carousel */
+.slider{display:grid;grid-auto-flow:column;grid-auto-columns:min(54rem,92%);gap:1.25rem;overflow-x:auto;scroll-snap-type:x mandatory;
+  padding:.5rem .25rem 1.25rem;scrollbar-width:thin;overscroll-behavior-x:contain}
+.slider:focus-visible{outline:2px solid var(--brand);outline-offset:4px;border-radius:24px}
+.student{--t1:#22C55E;--t2:#15A34A;position:relative;scroll-snap-align:start;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(1.25rem,3vw,2.25rem);
+  background:var(--surface);border:1px solid var(--line);border-radius:26px;padding:clamp(1.25rem,3vw,2.25rem);min-width:0}
+.student.c-red{--t1:#F04438;--t2:#F97316}
+.student.c-dark{--t1:#111827;--t2:#3B4558}
+.student.c-blue{--t1:#2563EB;--t2:#1E3A8A}
+.badge{position:absolute;top:1rem;right:1rem;font-size:.75rem;font-weight:800;color:var(--muted);border:1px dashed var(--line);border-radius:999px;padding:.15rem .6rem;background:var(--bg)}
+.doc{position:relative;aspect-ratio:3/4;max-width:100%;background:#fff;border-radius:4px;overflow:hidden;align-self:start;
+  box-shadow:0 22px 40px -22px rgba(15,27,51,.55),0 2px 6px rgba(15,27,51,.12);transform:rotate(-1.2deg);transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.doc img{width:100%;height:100%;object-fit:cover;object-position:top;filter:grayscale(.15)}
+.doc.ph{border-radius:4px;transform:rotate(-1.2deg)}
+.doc::after{content:"";position:absolute;left:0;bottom:0;width:30%;aspect-ratio:1;
+  background:linear-gradient(45deg,var(--surface) 0 50%,var(--t1) 50%,var(--t2) 100%);
+  box-shadow:6px -6px 14px -4px rgba(0,0,0,.28);border-top-right-radius:6px;transition:width .45s cubic-bezier(.2,.7,.2,1)}
+.student:hover .doc{transform:rotate(0) translateY(-4px)}
+.student:hover .doc::after{width:38%}
+.s-body{display:grid;grid-template-rows:auto 1fr auto;gap:.9rem;min-width:0}
+.s-body h3{font-size:clamp(1.4rem,2.6vw,2rem);font-weight:800}
+.s-body p{color:var(--muted)}
+.tiles{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+.tile{position:relative;min-height:8.5rem;border-radius:18px;padding:1.1rem 1.2rem;display:grid;align-content:end;gap:.15rem;color:#fff;
+  background:linear-gradient(135deg,var(--t1),var(--t2));overflow:hidden;min-width:0}
+.tile::after{content:"";position:absolute;top:.9rem;right:.9rem;width:.75rem;height:.75rem;border-radius:50%;background:rgba(255,255,255,.55)}
+.tile b{font-size:clamp(1.5rem,3vw,2.3rem);font-weight:800;line-height:1.05;overflow-wrap:anywhere}
+.tile span{font-size:.9rem;opacity:.85}
+.slider:has(.student:only-child)+.slide-nav{display:none}
+.slide-nav{display:flex;justify-content:center;gap:.6rem;margin-top:.6rem}
+.nav-btn{width:3rem;height:3rem;border-radius:50%;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);font-size:1.15rem;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.nav-btn:hover{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.nav-btn:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+@media (max-width:720px){.student{grid-template-columns:1fr}.doc{max-width:15rem}}
+
+/* ---- motion */
+.card,.why>div,.steps li,.uni,.gallery .g img{transition:transform .3s cubic-bezier(.2,.7,.2,1),box-shadow .3s}
+.card:hover,.steps li:hover{transform:translateY(-5px);box-shadow:0 22px 40px -26px color-mix(in srgb,var(--navy) 60%,transparent)}
+.gallery .g:hover img{transform:scale(1.04)}
+.btn{transition:background .2s,border-color .2s,color .2s,transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.top{transition:box-shadow .3s}
+.top.scrolled{box-shadow:0 10px 30px -18px color-mix(in srgb,var(--navy) 50%,transparent)}
+.hero-text>*{animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.hero-text>*:nth-child(2){animation-delay:.08s}
+.hero-text>*:nth-child(3){animation-delay:.16s}
+.hero-text>*:nth-child(4){animation-delay:.24s}
+.hero-media{animation:rise .9s .18s cubic-bezier(.2,.7,.2,1) both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.totop{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:30;width:3.1rem;height:3.1rem;border-radius:14px;border:0;
+  background:var(--brand);color:var(--on-brand);font-size:1.3rem;font-weight:700;cursor:pointer;box-shadow:0 12px 26px -12px var(--brand);
+  opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s}
+.totop.show{opacity:1;transform:none;pointer-events:auto}
+.totop:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+@media (prefers-reduced-motion: reduce){
+  .track{animation:none;width:auto}.set{flex-wrap:wrap}.set[aria-hidden]{display:none}
+  .hero-text>*,.hero-media{animation:none}.rv{opacity:1;transform:none;transition:none}
+  .card:hover,.steps li:hover,.btn:hover,.student:hover .doc{transform:none}
+}
+
+/* ---- hero composition: student photo + boarding pass + proof chip + visa card */
+.hero-media{padding:0}
+.hero-media .photo{aspect-ratio:5/4;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--navy) 45%,transparent)}
+.hero-media .photo img{object-position:50% 55%}
+.pass{position:absolute;top:0;right:-1.25rem;width:min(17.5rem,74%);background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:.95rem 1.1rem;
+  box-shadow:0 24px 48px -22px color-mix(in srgb,var(--navy) 50%,transparent);transform:rotate(3deg);animation:float 6s ease-in-out infinite}
+.pass-top{display:flex;justify-content:space-between;font-size:.7rem;font-weight:800;color:var(--muted);text-transform:uppercase;letter-spacing:.09em;padding-bottom:.55rem;border-bottom:2px dashed var(--line)}
+.route{display:flex;align-items:center;justify-content:space-between;padding:.65rem 0 .5rem}
+.route b{font-size:1.85rem;font-weight:800;display:block;line-height:1;letter-spacing:.02em}
+.route small{color:var(--muted);font-size:.78rem}
+.route>div:last-child{text-align:right}
+.plane{color:var(--brand);flex:1;display:flex;align-items:center;gap:.35rem;margin-inline:.6rem}
+.plane::before,.plane::after{content:"";flex:1;border-top:2px dotted var(--line)}
+.pass-row{display:flex;justify-content:space-between;gap:1rem;font-size:.85rem;border-top:1px solid var(--line);padding-top:.5rem}
+.pass-row small{display:block;color:var(--muted);font-size:.7rem}
+.pass-row b{font-weight:800}
+.proof{position:absolute;left:-1.6rem;top:44%;display:flex;align-items:center;gap:.75rem;background:var(--bg);border:1px solid var(--line);border-radius:999px;
+  padding:.45rem 1.1rem .45rem .45rem;box-shadow:0 18px 40px -20px color-mix(in srgb,var(--navy) 50%,transparent);animation:float2 7s ease-in-out infinite}
+.avs{display:flex}
+.avs img{width:2.4rem;height:2.4rem;border-radius:50%;object-fit:cover;border:2px solid var(--bg);margin-left:-.65rem}
+.avs img:first-child{margin-left:0}
+.proof b{font-size:1.2rem;font-weight:800;display:block;line-height:1.05;color:var(--brand)}
+.proof span{font-size:.8rem;color:var(--muted)}
+@keyframes float{0%,100%{transform:rotate(3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-9px)}}
+@keyframes float2{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+@media (max-width:860px){.pass{right:-.25rem}.proof{left:-.25rem}}
+@media (max-width:480px){.pass{width:78%}.route b{font-size:1.5rem}.proof{top:auto;bottom:6.5rem}}
+@media (prefers-reduced-motion: reduce){.pass,.proof{animation:none}}
+/* ---- hero: rotating stack of approved visa documents */
+.docs{position:relative;aspect-ratio:1/0.95;width:100%;max-width:36rem;margin-inline:auto;isolation:isolate}
+.docs::before{content:"";position:absolute;inset:6% 4% 2%;z-index:-1;border-radius:50%;
+  background:radial-gradient(closest-side,color-mix(in srgb,var(--brand) 18%,transparent),transparent 72%)}
+.dd{position:absolute;top:4%;left:25%;width:50%;margin:0;transform-origin:50% 90%;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1),opacity .9s ease,filter .9s ease}
+.dd img{display:block;width:100%;aspect-ratio:883/1245;object-fit:cover;object-position:top;background:#fff;border-radius:6px;
+  border:1px solid rgba(15,27,51,.08);box-shadow:0 40px 70px -34px rgba(15,27,51,.55),0 3px 12px rgba(15,27,51,.10)}
+.dd.s-c{z-index:3;transform:none;opacity:1}
+.dd.s-l{z-index:2;transform:translateX(-48%) translateY(5%) rotate(-9deg) scale(.9);opacity:1;filter:brightness(.97)}
+.dd.s-r{z-index:2;transform:translateX(48%) translateY(5%) rotate(9deg) scale(.9);opacity:1;filter:brightness(.97)}
+.dd.s-h{z-index:1;transform:translateY(8%) scale(.8);opacity:0}
+@media (prefers-reduced-motion: reduce){.dd{transition:none}}
+.docs-cap{text-align:center;color:var(--muted);font-size:.85rem;margin-top:.4rem}
+/* ---- video */
+.videos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}
+.vcard{margin:0;display:grid;gap:.8rem;min-width:0}
+.vcard figcaption{font-weight:800;font-size:1.1rem;text-align:center}
+@media (max-width:760px){.videos{grid-template-columns:1fr}}
+.video{position:relative;display:block;width:100%;aspect-ratio:16/9;border-radius:20px;overflow:hidden;background:var(--navy);
+  box-shadow:0 40px 70px -40px color-mix(in srgb,var(--navy) 70%,transparent)}
+.video img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1),filter .4s}
+.video::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(8,14,30,.55))}
+.video:hover img{transform:scale(1.03);filter:brightness(.9)}
+.play{position:absolute;left:50%;top:50%;z-index:2;width:5.2rem;height:5.2rem;margin:-2.6rem 0 0 -2.6rem;border-radius:50%;display:grid;place-items:center;
+  background:#fff;color:var(--brand);box-shadow:0 0 0 12px rgba(255,255,255,.22);transition:transform .3s,box-shadow .3s}
+.play svg{width:2rem;height:2rem;margin-left:.25rem}
+.video:hover .play{transform:scale(1.08);box-shadow:0 0 0 18px rgba(255,255,255,.18)}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+@media (max-width:520px){.play{width:4rem;height:4rem;margin:-2rem 0 0 -2rem}.play svg{width:1.5rem;height:1.5rem}}
+
 </style>
 </head>
 <body>
+<header class="top"><div class="wrap">
+  <a class="brand" href="/"><span class="mark">KT</span>Koreada Ta'lim</a>
+  <nav class="nav" aria-label="Menu"><a href="#xizmatlar">Xizmatlar</a><a href="#haqimda">Men haqimda</a><a href="#jarayon">Jarayon</a><a href="#savollar">Savollar</a></nav>
+  <div class="langs" role="navigation" aria-label="Til"><a href="/" data-lang="uz" lang="uz" hreflang="uz" title="O&#x27;zbekcha" aria-current="page">UZ</a><a href="/en/" data-lang="en" lang="en" hreflang="en" title="English">EN</a><a href="/ko/" data-lang="ko" lang="ko" hreflang="ko" title="한국어">KO</a></div>
+  <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener">Bepul konsultatsiya</a>
+</div></header>
 
-
-<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="cloud" viewBox="0 0 200 80"><path d="M196 60 C160 64 124 56 98 64 C72 74 26 72 22 48 C18 24 40 10 58 14 C70 4 94 6 100 20 C114 12 132 22 126 36 C122 46 106 46 106 38 C106 31 115 31 115 37"/><path d="M52.0 38.0 L51.5 37.8 L51.0 37.7 L50.4 37.7 L49.8 37.9 L49.2 38.2 L48.7 38.7 L48.2 39.4 L47.9 40.2 L47.8 41.0 L47.8 42.0 L48.1 42.9 L48.6 43.8 L49.3 44.6 L50.2 45.3 L51.3 45.9 L52.5 46.1 L53.8 46.2 L55.1 45.9 L56.4 45.4 L57.5 44.6 L58.6 43.5 L59.4 42.2 L59.9 40.7 L60.2 39.1 L60.1 37.4 L59.6 35.7 L58.8 34.1 L57.6 32.6 L56.2 31.4 L54.4 30.5 L52.5 30.0 L50.4 29.8 L48.4 30.1 L46.3 30.8 L44.4 31.9 L42.7 33.4 L41.4 35.3 L40.4 37.5 L39.9 39.8 L39.8 42.3 L40.3 44.8 L41.3 47.2 L42.7 49.4 L44.7 51.3 L47.0 52.7 L49.6 53.7 L52.4 54.2 L55.2 54.1 L58.1 53.4 L60.8 52.1"/><path d="M124 48 C148 40 170 54 196 48"/></symbol></svg>
-<div class="sky" aria-hidden="true"><svg class="c1" viewBox="0 0 200 80"><use href="#cloud"/></svg><svg class="c2" viewBox="0 0 200 80"><use href="#cloud"/></svg><svg class="c3" viewBox="0 0 200 80"><use href="#cloud"/></svg></div>
-<div class="wrap">
-  <div class="top">
-    <button class="back" id="back" hidden>← Orqaga</button>
-    <div class="route" id="railbox" aria-hidden="true"><span>UZ</span><div class="track"><i id="rail"></i><span class="plane" id="plane"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></span></div><span class="kr">KR</span></div>
-    <div class="count" id="count" hidden></div>
+<main>
+<section class="hero"><div class="wrap">
+  <div class="hero-text">
+    <h1>Va&#x27;da emas, tasdiqlangan vizalar</h1>
+    <p>Bu yerda ko&#x27;rib turganingiz reklama uchun qilingan dizayn emas, studentlarimizning haqiqiy vizalari. 70+ talabaga qo&#x27;limdan kelgancha yordam berib kelmoqdaman.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>Bepul konsultatsiya olish</a>
+      <a class="btn btn-ghost" href="#xizmatlar">Xizmatlar</a>
+    </div>
   </div>
-  <main id="main"></main>
-  <div class="brand">Ikhlos Khamidov · Koreada Ta'lim</div>
-</div>
+  <div class="hero-media">
+    <div class="docs" aria-label="Bizning studentlar"><figure class="dd s-l"><img src="/assets/hero-docs/07.jpg" alt="Viza hujjati"></figure><figure class="dd s-c"><img src="/assets/hero-docs/03.jpg" alt="Viza hujjati"></figure><figure class="dd s-r"><img src="/assets/hero-docs/05.jpg" alt="Viza hujjati"></figure><figure class="dd s-h"><img src="/assets/hero-docs/01.jpg" alt="Viza hujjati" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/06.jpg" alt="Viza hujjati" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/04.jpg" alt="Viza hujjati" loading="lazy"></figure><figure class="dd s-h"><img src="/assets/hero-docs/02.jpg" alt="Viza hujjati" loading="lazy"></figure></div><p class="docs-cap">Studentlarimizning haqiqiy vizalari. Shaxsiy ma&#x27;lumotlar yopilgan.</p>
+  </div>
+</div></section>
 
+<section class="stats" aria-label="Facts"><div class="wrap"><div class="stat"><b>2023</b><span>yildan beri Koreya ta&#x27;lim sohasida</span></div><div class="stat"><b>2+ yil</b><span>universitet xalqaro ofisida tajriba</span></div><div class="stat"><b>70+</b><span>studentga yordam berdim</span></div><div class="stat"><b>Bepul</b><span>birinchi konsultatsiya</span></div></div></section>
+
+<section class="unis"><div class="wrap">
+  <h2>Hujjat topshirgan universitetlarimiz</h2>
+  <div class="marquee"><div class="track"><div class="set"><div class="uni"><b>Chungbuk National University</b><span lang="ko">충북대학교</span></div><div class="uni"><b>Seowon University</b><span lang="ko">서원대학교</span></div><div class="uni"><b>Chungbuk Provincial University</b><span lang="ko">충북도립대학교</span></div><div class="uni"><b>Kyonggi University</b><span lang="ko">경기대학교</span></div><div class="uni"><b>Yewon Arts University</b><span lang="ko">예원예술대학교</span></div><div class="uni"><b>Hoseo University</b><span lang="ko">호서대학교</span></div><div class="uni"><b>Gwangju Women&#x27;s University</b><span lang="ko">광주여자대학교</span></div><div class="uni"><b>Kongju National University</b><span lang="ko">국립공주대학교</span></div></div><div class="set" aria-hidden="true"><div class="uni"><b>Chungbuk National University</b><span lang="ko">충북대학교</span></div><div class="uni"><b>Seowon University</b><span lang="ko">서원대학교</span></div><div class="uni"><b>Chungbuk Provincial University</b><span lang="ko">충북도립대학교</span></div><div class="uni"><b>Kyonggi University</b><span lang="ko">경기대학교</span></div><div class="uni"><b>Yewon Arts University</b><span lang="ko">예원예술대학교</span></div><div class="uni"><b>Hoseo University</b><span lang="ko">호서대학교</span></div><div class="uni"><b>Gwangju Women&#x27;s University</b><span lang="ko">광주여자대학교</span></div><div class="uni"><b>Kongju National University</b><span lang="ko">국립공주대학교</span></div></div></div></div>
+</div></section>
+
+<section class="block" id="xizmatlar"><div class="wrap">
+  <div class="head c"><h2>Xizmatlar</h2><p>Hujjat topshirishdan Koreyaga yetib kelguningizgacha.</p></div>
+  <div class="cards"><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/><path d="M8 7h7"/></svg></span><h3>Til kursi</h3><p>Universitetlarning koreys tili kurslariga (D-4) hujjat topshirish.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2 9 2 12 0v-5"/><path d="M22 9v6"/></svg></span><h3>Bakalavr</h3><p>Universitet va yo&#x27;nalish tanlash, ariza va motivatsion xat.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></svg></span><h3>Magistratura</h3><p>Dastur tanlash, hujjatlar to&#x27;plami va e-viza.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/><path d="M3 13h18"/></svg></span><h3>Kasbiy ta&#x27;lim</h3><p>Kasbiy ta&#x27;lim dasturlariga hujjat topshirish.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="m9 15 2 2 4-4"/></svg></span><h3>Viza</h3><p>Hujjatlarni yig&#x27;ish va tekshirish, xatolarni oldindan topish.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 4 3 8l4 4"/><path d="M3 8h14"/><path d="m17 20 4-4-4-4"/><path d="M21 16H7"/></svg></span><h3>D-4 dan D-2 ga o&#x27;tish</h3><p>Koreyadagi til kursi talabalarining bakalavrga o&#x27;tishi.</p></div><div class="card"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><h3>Kutib olish va joylashish</h3><p>Vizasi tasdiqlangan studentlar uchun aeroportdan kutib olish va turar joy.</p></div><div class="card featured"><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg></span><h3>Bepul konsultatsiya</h3><p>Vaziyatingizni ko&#x27;rib chiqamiz va sizga mos yo&#x27;lni tanlaymiz.</p></div></div>
+</div></section>
+
+<section class="block results" id="natijalar"><div class="wrap">
+  <div class="head c"><h2>Bizning studentlar</h2><p>Xamir uchidan patir deganlaridek, studentlarimizning natijalari bilan tanishing va ilhom oling</p></div>
+  <div class="slider" id="slider" data-auto tabindex="0"><article class="student c-green"><div class="doc"><img src="/assets/students/01.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Bahriddinov Asilbek</h3><p>Bankshot qo&#x27;yib, ko&#x27;plab firmalar bilan gaplashib ko&#x27;rgandan keyin menga murojaat qilgan. Telex viza orqali topshirib, eng oxirgilardan bo&#x27;lib vizasini oldi. Hozir Namyangju shahridagi DK Universityda o&#x27;qiydi.</p><div class="tiles"><div class="tile"><b>D-4</b><span>Viza turi</span></div><div class="tile"><b>DK University</b><span>Universitet</span></div></div></div></article><article class="student c-red"><div class="doc"><img src="/assets/students/02.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Kodiraliev Doniyorbek</h3><p>Yoshligiga qaramay chet elda o&#x27;qishga qiziqdi, akasi esa uning Koreyaga kelishida katta yordam berdi. Telex viza orqali, osonlik bilan viza olgan talabalarimizdan biri. Daejeon Institute of Science and Technology&#x27;ga qabul qilindi.</p><div class="tiles"><div class="tile"><b>D-4</b><span>Viza turi</span></div><div class="tile"><b>DIST</b><span>Universitet</span></div></div></div></article><article class="student c-dark"><div class="doc"><img src="/assets/students/03.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Ahmadjonov Inomjon</h3><p>Mendan maslahat so&#x27;raganida koreys tilini yaxshi o&#x27;qishni tavsiya qilgandim. TOPIK 3 ni olib, yana bog&#x27;landi. Men ham o&#x27;qiydigan Seowon universitetining Business yo&#x27;nalishiga birga hujjat topshirdik va vizani ham oldik.</p><div class="tiles"><div class="tile"><b>D-2</b><span>Viza turi</span></div><div class="tile"><b>Seowon</b><span>Universitet</span></div></div></div></article><article class="student c-blue"><div class="doc"><img src="/assets/students/04.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Abdukholisov Khabibullo</h3><p>Yevropani aylanib chiqqanidan keyin magistraturani Koreyada o&#x27;qishga qaror qildi. Seuldagi Sudo International University&#x27;ga hujjat topshirdik va uzoq, qiyin kutishlardan so&#x27;ng vizasini ham olib berdik.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>Viza turi</span></div><div class="tile"><b>Sudo International</b><span>Universitet</span></div></div></div></article><article class="student c-green"><div class="doc"><img src="/assets/students/05.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Tursunov Asilbek</h3><p>Yoshi kattaroq bo&#x27;lgani va til sertifikati yo&#x27;qligi uchun viza olish imkoniyati 50/50 edi. Lekin nasib qilgan ekan: Seuldagi Kyonggi universitetiga qabul qilinib, hozir o&#x27;qishni boshladi. Vizasi tasdiqlanganiga hali ham o&#x27;zi ishonmaydi.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>Viza turi</span></div><div class="tile"><b>Kyonggi</b><span>Universitet</span></div></div></div></article><article class="student c-red"><div class="doc"><img src="/assets/students/06.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Nematov Abdijalil</h3><p>TOPIK 2 bilan kasbiy ta&#x27;limga emas, aynan til kursiga borishni tanladi, chunki avval koreys tilini yaxshi o&#x27;rganmoqchi edi. Seuldagi Korea Bible University til kursiga kirdi va keyin bakalavrda Computer Engineering yo&#x27;nalishida o&#x27;qimoqchi. TOPIK sertifikati borligi uchun telex emas, oddiy til kursi vizasini olib berdik.</p><div class="tiles"><div class="tile"><b>D-4</b><span>Viza turi</span></div><div class="tile"><b>Korea Bible</b><span>Universitet</span></div></div></div></article><article class="student c-dark"><div class="doc"><img src="/assets/students/07.jpg" alt="Viza hujjati" loading="lazy"></div><div class="s-body"><h3>Khojimatova Nargizakhon</h3><p>IELTS 7 bilan qanchalik nufuzli universitetga kirish mumkinligiga yaxshi misol. Cheongju shahridagi Chungbuk National University&#x27;ga 70% grant bilan qabul qilindi va e-vizasini olib berdik. Bankshot va yillik daromad hujjatlarisiz, qulay yo&#x27;l bilan topshirib, viza tasdiqlandi.</p><div class="tiles"><div class="tile"><b>E-visa</b><span>Viza turi</span></div><div class="tile"><b>Chungbuk National</b><span>Universitet</span></div></div></div></article></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="slider" aria-label="Oldingi">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="slider" aria-label="Keyingi">→</button>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+  <div class="head c"><h2>Nega aynan men</h2></div>
+  <div class="why"><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h8.5a3.5 3.5 0 0 0 0-7h-9a3.5 3.5 0 0 1 0-7H16"/></svg></span><h3>Xalqaro talaba sifatida</h3><p>Koreyada o&#x27;zim ham xalqaro talaba sifatida o&#x27;qiyman. Sizni kutayotgan yo&#x27;lni yaxshi bilaman.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 21V5l8-3 8 3v16"/><path d="M2 21h20"/><path d="M9 9h1M14 9h1M9 13h1M14 13h1M10 21v-4h4v4"/></svg></span><h3>Ichkaridan tajriba</h3><p>Universitet xalqaro ofisida 2 yildan ortiq ishlab, arizalar qanday ko&#x27;rib chiqilishini ko&#x27;rganman.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.1 7-12a7 7 0 0 0-14 0c0 5.9 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span><h3>Koreyada, joyida</h3><p>Koreyada yashayman va o&#x27;qiyman. Savollaringizga shu yerdan javob beraman.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span><h3>Ochiq jarayon</h3><p>Har bir qadamni oldindan tushuntiraman. Viza kafolati kabi bo&#x27;sh va&#x27;dalar bermayman.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12z"/></svg></span><h3>O&#x27;z tilingizda</h3><p>O&#x27;zbek, ingliz va koreys tillarida muloqot qilaman.</p></div><div><span class="ico"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.5 13.5 3 11l1.5-1.5 8 1L17 6a2.1 2.1 0 0 1 3 3l-4.5 4.5 1 8L15 23l-2.5-7.5L9 19v3l-1.5 1L6 19.5 2 18l1-1.5h3z"/></svg></span><h3>Kelgandan keyin ham yoningizda</h3><p>Aeroportdan kutib olish, joylashish va D-4 dan D-2 ga o&#x27;tish.</p></div></div>
+</div></section>
+
+<section class="block" id="haqimda"><div class="wrap about">
+  <div class="about-card">
+    <div class="photo"><img src="/assets/founder.jpg" alt="Ikhlos Khamidov" loading="lazy"></div>
+    <div class="who"><b>Ikhlos Khamidov</b><span>Sizning yordamchingiz</span></div>
+    <blockquote>Universitet ichida ishlab, arizalar qanday ko&#x27;rib chiqilishini o&#x27;z ko&#x27;zim bilan ko&#x27;rganman. Endi shu tajribani sizning yo&#x27;lingiz uchun ishlataman.</blockquote>
+  </div>
+  <div>
+    <div class="head"><h2>Men haqimda</h2></div>
+    <ol class="timeline"><li><span class="year">Toshkent</span><div class="body"><h3>Litseyni tamomladim va ingliz tilini o&#x27;rgandim</h3><p>Toshkentdagi Jahon iqtisodiyoti va diplomatiya universiteti qoshidagi litseyni tamomladim. Ingliz tilini o&#x27;rganib, chet elda o&#x27;qishga tayyorlandim.</p></div></li><li><span class="year">2024</span><div class="body"><h3>Koreyaga topshirdim va keldim</h3><p>Seowon universitetida Global Communication va Business Administration yo&#x27;nalishlarida o&#x27;qiyman.</p></div></li><li><span class="year">2+ yil</span><div class="body"><h3>Universitet xalqaro ofisida ishladim</h3><p>Xalqaro talabalarning viza va hujjat ishlari bilan 2 yildan ortiq shug&#x27;ullandim. Shu davrda 5–6 ta konsalting firmasining ishini yaqindan o&#x27;rgandim.</p></div></li><li><span class="year">Bugun</span><div class="body"><h3>Sizning yordamchingiz</h3><p>Koreyada, O&#x27;zbekistonda va boshqa davlatlarda o&#x27;qishni davom ettirmoqchi bo&#x27;lganlarga yordam beraman.</p></div></li></ol>
+  </div>
+</div></section>
+
+<section class="block alt"><div class="wrap">
+  <div class="head c"><h2>Studentlar bilan</h2><p>Koreyadagi talabalik hayoti va studentlarimiz bilan lahzalar.</p></div>
+  <div class="gallery" id="gal" data-auto tabindex="0"><figure class="g"><img src="/assets/gallery/01.jpg" alt="Chungcheongbuk-do delegatsiyasi bilan uchrashuv, Ipak yo&#x27;li xalqaro universiteti" loading="lazy"><figcaption>Chungcheongbuk-do delegatsiyasi bilan uchrashuv, Ipak yo&#x27;li xalqaro universiteti</figcaption></figure><figure class="g"><img src="/assets/gallery/02.jpg" alt="Chungbuk viloyat universiteti til kursi talabalari, Koreya madaniyati safari, 2024" loading="lazy"><figcaption>Chungbuk viloyat universiteti til kursi talabalari, Koreya madaniyati safari, 2024</figcaption></figure><figure class="g"><img src="/assets/gallery/03.jpg" alt="Studentlar bilan festivalda" loading="lazy"><figcaption>Studentlar bilan festivalda</figcaption></figure><figure class="g"><img src="/assets/gallery/04.jpg" alt="Toqqa sayohat" loading="lazy"><figcaption>Toqqa sayohat</figcaption></figure><figure class="g"><img src="/assets/gallery/05.jpg" alt="Studentlar bilan" loading="lazy"><figcaption>Studentlar bilan</figcaption></figure><figure class="g"><img src="/assets/gallery/06.jpg" alt="Koreya madaniyati: hanbok" loading="lazy"><figcaption>Koreya madaniyati: hanbok</figcaption></figure><figure class="g"><img src="/assets/gallery/07.jpg" alt="Seowon universiteti, K-culture tadbiri" loading="lazy"><figcaption>Seowon universiteti, K-culture tadbiri</figcaption></figure><figure class="g"><img src="/assets/gallery/08.jpg" alt="Incheon aeroportida studentlarni kutib olish, Chungbuk viloyat universiteti" loading="lazy"><figcaption>Incheon aeroportida studentlarni kutib olish, Chungbuk viloyat universiteti</figcaption></figure><figure class="g"><img src="/assets/gallery/09.jpg" alt="Chungbuk viloyat universiteti, xalqaro talabalar K-Guardian marosimi, 2024" loading="lazy"><figcaption>Chungbuk viloyat universiteti, xalqaro talabalar K-Guardian marosimi, 2024</figcaption></figure><figure class="g"><img src="/assets/gallery/10.jpg" alt="Jungwon universiteti, bosh kampus" loading="lazy"><figcaption>Jungwon universiteti, bosh kampus</figcaption></figure><figure class="g"><img src="/assets/gallery/11.jpg" alt="Osiyo kurash chempionati, Goesan, 2025" loading="lazy"><figcaption>Osiyo kurash chempionati, Goesan, 2025</figcaption></figure><figure class="g"><img src="/assets/gallery/12.jpg" alt="Osiyo kurash chempionati jamoasi bilan" loading="lazy"><figcaption>Osiyo kurash chempionati jamoasi bilan</figcaption></figure><figure class="g"><img src="/assets/gallery/13.jpg" alt="Studentlar bilan" loading="lazy"><figcaption>Studentlar bilan</figcaption></figure></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="gal" aria-label="Oldingi">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="gal" aria-label="Keyingi">→</button>
+  </div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="head c"><h2>Universitetlar video orqali</h2><p>Kampus, darslar va talabalik hayoti bilan qisqacha tanishing.</p></div>
+  <div class="videos"><figure class="vcard"><a class="video" href="https://www.youtube.com/watch?v=OmocTjKvIxU" target="_blank" rel="noopener" data-yt="OmocTjKvIxU" data-embed="1" aria-label="Videoni ko&#x27;rish: Seowon universiteti"><img src="https://i.ytimg.com/vi/OmocTjKvIxU/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/OmocTjKvIxU/hqdefault.jpg'"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></a><figcaption>Seowon universiteti</figcaption></figure><figure class="vcard"><a class="video" href="https://www.youtube.com/watch?v=BUjhjCUwHkw" target="_blank" rel="noopener" data-yt="BUjhjCUwHkw" data-embed="1" aria-label="Videoni ko&#x27;rish: Chungbuk viloyat universiteti"><img src="https://i.ytimg.com/vi/BUjhjCUwHkw/maxresdefault.jpg" alt="" loading="lazy" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/BUjhjCUwHkw/hqdefault.jpg'"><span class="play"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span></a><figcaption>Chungbuk viloyat universiteti</figcaption></figure></div>
+</div></section>
+
+<section class="block"><div class="wrap">
+  <div class="head c"><h2>Studentlar fikri</h2><p>Biz bilan Koreyaga kelgan studentlar o&#x27;z tajribasi haqida.</p></div>
+  <div class="reviews" id="rev" data-auto tabindex="0"><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/01.png" aria-label="To&#x27;liq ko&#x27;rish: Viza tasdiqlangan kun"><img src="/assets/review-cards/01.jpg" alt="Viza tasdiqlangan kun" loading="lazy"><span class="r-zoom">To&#x27;liq ko&#x27;rish</span></button><figcaption>Viza tasdiqlangan kun</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/02.png" aria-label="To&#x27;liq ko&#x27;rish: &quot;Chiqdi aka, rahmat!&quot;"><img src="/assets/review-cards/02.jpg" alt="&quot;Chiqdi aka, rahmat!&quot;" loading="lazy"><span class="r-zoom">To&#x27;liq ko&#x27;rish</span></button><figcaption>&quot;Chiqdi aka, rahmat!&quot;</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/03.png" aria-label="To&#x27;liq ko&#x27;rish: Natijani hazil bilan e&#x27;lon qildik"><img src="/assets/review-cards/03.jpg" alt="Natijani hazil bilan e&#x27;lon qildik" loading="lazy"><span class="r-zoom">To&#x27;liq ko&#x27;rish</span></button><figcaption>Natijani hazil bilan e&#x27;lon qildik</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/04.png" aria-label="To&#x27;liq ko&#x27;rish: &quot;Brat, viza chiqdi!&quot;"><img src="/assets/review-cards/04.jpg" alt="&quot;Brat, viza chiqdi!&quot;" loading="lazy"><span class="r-zoom">To&#x27;liq ko&#x27;rish</span></button><figcaption>&quot;Brat, viza chiqdi!&quot;</figcaption></figure><figure class="r"><button type="button" class="r-open" data-full="/assets/reviews/05.png" aria-label="To&#x27;liq ko&#x27;rish: Viza tasdiqlandi, endi chipta"><img src="/assets/review-cards/05.jpg" alt="Viza tasdiqlandi, endi chipta" loading="lazy"><span class="r-zoom">To&#x27;liq ko&#x27;rish</span></button><figcaption>Viza tasdiqlandi, endi chipta</figcaption></figure></div>
+  <div class="slide-nav">
+    <button type="button" class="nav-btn" data-slide="-1" data-target="rev" aria-label="Oldingi">←</button>
+    <button type="button" class="nav-btn" data-slide="1" data-target="rev" aria-label="Keyingi">→</button>
+  </div>
+</div></section>
+
+<section class="block alt" id="jarayon"><div class="wrap">
+  <div class="head c"><h2>Jarayon qanday o&#x27;tadi</h2></div>
+  <ol class="steps"><li><h3>Bepul konsultatsiya</h3><p>Maqsadingiz, budjetingiz va hujjatlaringizni ko&#x27;rib chiqamiz.</p></li><li><h3>Dastur tanlash</h3><p>Sizga mos universitet va dasturni birga tanlaymiz.</p></li><li><h3>Hujjatlar va ariza</h3><p>Hujjatlarni tayyorlaymiz va universitetga topshiramiz.</p></li><li><h3>Viza</h3><p>Viza hujjatlarini tekshiramiz va arizani topshiramiz.</p></li><li><h3>Koreyaga kelish</h3><p>Aeroportdan kutib olish va joylashishda yordam beraman.</p></li></ol>
+  <p class="honest"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Viza kafolatini hech kimga bermayman: yakuniy qarorni immigratsiya qiladi. Men hujjatlaringiz to&#x27;g&#x27;ri va to&#x27;liq tayyorlanishiga yordam beraman.</span></p>
+</div></section>
+
+<section class="block" id="savollar"><div class="wrap faq-wrap">
+  <div class="head"><h2>Ko&#x27;p beriladigan savollar</h2></div>
+  <div class="faq"><details><summary>Konsultatsiya haqiqatan bepulmi?</summary><p>Ha. Birinchi suhbat bepul. Unda vaziyatingizni ko&#x27;rib chiqamiz va qaysi yo&#x27;l sizga mosligini aytaman.</p></details><details><summary>Vizani kafolatlaysizmi?</summary><p>Yo&#x27;q. Vizani faqat immigratsiya beradi. Men hujjatlaringiz to&#x27;g&#x27;ri tayyorlanishiga va rad etilish xavfini kamaytirishga yordam beraman.</p></details><details><summary>Vizam oldin rad etilgan bo&#x27;lsa-chi?</summary><p>Ko&#x27;p hollarda qayta topshirish mumkin. Avval rad etilish sababini birga tahlil qilamiz, keyin keyingi qadamni rejalashtiramiz.</p></details><details><summary>Koreys tilini bilmasam ham bo&#x27;ladimi?</summary><p>Ha. Ko&#x27;pchilik koreys tili kursidan boshlaydi. Konsultatsiyada sizga qaysi yo&#x27;l mosligini aniqlaymiz.</p></details><details><summary>Qanday bog&#x27;lanaman?</summary><p>Telegram botimiz orqali yozing yoki Instagram&#x27;da xabar qoldiring.</p></details></div>
+</div></section>
+
+<section class="cta"><div class="wrap"><div class="cta-box">
+  <div><h2>Koreyaga yo&#x27;lingizni bitta suhbatdan boshlang</h2><p>Telegram&#x27;da yozing. Vaziyatingizni ko&#x27;rib chiqib, qaysi yo&#x27;l sizga mosligini aytaman.</p></div>
+  <div class="actions">
+    <a class="btn btn-primary" href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 2 11 13"/><path d="M22 2 15 22l-4-9-9-4z"/></svg>Telegram&#x27;da yozish</a>
+    <a class="btn btn-ghost" href="https://instagram.com/ikhlos_khamidov" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="grid">
+    <div><span class="brand"><span class="mark">KT</span>Koreada Ta'lim</span><p>Koreya universitetlariga qabul va viza bo&#x27;yicha maslahat. Til kursi, bakalavr, magistratura, kasbiy ta&#x27;lim.</p></div>
+    <div><b>Bo&#x27;limlar</b><ul><li><a href="#xizmatlar">Xizmatlar</a></li><li><a href="#haqimda">Men haqimda</a></li><li><a href="#jarayon">Jarayon</a></li><li><a href="#savollar">Savollar</a></li></ul></div>
+    <div><b>Aloqa</b><ul>
+      <li><a href="https://t.me/KoreadaTalim_bot" target="_blank" rel="noopener">Telegram: @KoreadaTalim_bot</a></li>
+      <li><a href="https://instagram.com/ikhlos_khamidov" target="_blank" rel="noopener">Instagram: @ikhlos_khamidov</a></li>
+      <li><a href="tel:+821083920305" class="sel">+82 10-8392-0305</a> <span class="muted-s">(Korea)</span></li>
+      <li class="sel">ikhlos@koreadatalim.com</li>
+    </ul></div>
+  </div>
+  <div class="bottom">© 2026 Koreada Ta'lim. Ikhlos Khamidov.</div>
+</div></footer>
+<button type="button" class="totop" aria-label="Yuqoriga">↑</button>
+<div class="lb" hidden><button type="button" class="lb-x" aria-label="Yopish">×</button><img alt=""></div>
 <script>
-// Telegram bot username (without @) — o'zingizning botingiz nomini shu yerga yozing
-const BOT_USERNAME = "KoreadaTalim_bot";
+(()=>{const rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const top=document.querySelector('.top'),tt=document.querySelector('.totop');
+const onS=()=>{const y=scrollY;top&&top.classList.toggle('scrolled',y>8);tt&&tt.classList.toggle('show',y>700)};
+addEventListener('scroll',onS,{passive:true});onS();
+tt&&tt.addEventListener('click',()=>scrollTo({top:0,behavior:rm?'auto':'smooth'}));
+document.querySelectorAll('[data-slide]').forEach(b=>b.addEventListener('click',()=>{
+  const s=document.getElementById(b.dataset.target);if(!s)return;const c=s.firstElementChild;
+  const w=c?c.getBoundingClientRect().width+20:s.clientWidth;s.scrollBy({left:w*(+b.dataset.slide),behavior:rm?'auto':'smooth'})}));
 
-const AVATAR = "data:image/jpeg;base64,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";
-const EN_CERTS = [{code:"I", name:"IELTS", ph:"Masalan: 5.5"}, {code:"T", name:"TOEFL", ph:"Masalan: 72"}];
-const KO_CERTS = [{code:"T", name:"TOPIK", ph:"Masalan: 3"}, {code:"S", name:"Sejong Hakdang", ph:"Masalan: 2-daraja"}];
-const STATUS = ["Studentman","Ishlayman","Hozircha bo'shman"];
-const DIR = ["Til kursi","Bakalavr","Magistratura","E-visa magistratura","Hali bilmayman"];
-const LANG = ["Ingliz tili","Koreys tili","Ikkalasini ham","Hali hech birini"];
-const NO_LANG_DIRS = [0, 3]; // til kursi va e-visa: til/sertifikat so'ralmaydi
-const TRIED = ["Yo'q, birinchi marta","Ha, viza olganman","Ha, lekin otkaz olganman"];
-const REFUSED = ["Yo'q, birinchi topshirishim","Ha, otkaz olganman"];
+document.querySelectorAll('.docs').forEach(box=>{const docs=[...box.querySelectorAll('.dd')];
+if(docs.length>3&&!rm){let c=1;const n=docs.length;
+  const set=()=>docs.forEach((d,i)=>{d.classList.remove('s-l','s-c','s-r','s-h');
+    d.classList.add(i===c?'s-c':i===(c-1+n)%n?'s-l':i===(c+1)%n?'s-r':'s-h')});
+  setInterval(()=>{if(document.hidden)return;c=(c+1)%n;set()},5000);}});
 
-const A = {name:"", status:-1, dir:-1, lang:-1, ielts:"", topik:"", enType:0, koType:0, age:"", tried:-1, refused:-1};
-let pos = -1;
-const $ = id => document.getElementById(id);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.querySelectorAll('[data-auto]').forEach(sl=>{if(rm||sl.children.length<2)return;let hold=false;
+  ['mouseenter','focusin','touchstart'].forEach(e=>sl.addEventListener(e,()=>hold=true,{passive:true}));
+  ['mouseleave','focusout'].forEach(e=>sl.addEventListener(e,()=>hold=false));
+  sl.addEventListener('touchend',()=>setTimeout(()=>hold=false,4000),{passive:true});
+  setInterval(()=>{if(hold||document.hidden)return;const r=sl.getBoundingClientRect();if(r.bottom<0||r.top>innerHeight)return;
+    const w=sl.firstElementChild.getBoundingClientRect().width+parseFloat(getComputedStyle(sl).columnGap||16);
+    if(sl.scrollLeft+sl.clientWidth>=sl.scrollWidth-8)sl.scrollTo({left:0,behavior:'smooth'});else sl.scrollBy({left:w,behavior:'smooth'})},5000)});
 
-// Javoblarga qarab savollar ketma-ketligi
-function flow(){
-  const f = ["name","status","dir"];
-  if (A.dir < 0) return [...f, "lang", "extra"];
-  if (A.dir === 0) return [...f, "age", "tried"];
-  if (A.dir === 3) return [...f, "age", "refused"];
-  f.push("lang");
-  f.push(A.lang === 3 ? "age" : "cert");
-  return f;
-}
+document.querySelectorAll('.video[data-embed]').forEach(a=>{
+  a.addEventListener('click',e=>{e.preventDefault();const f=document.createElement('iframe');
+  f.src='https://www.youtube-nocookie.com/embed/'+a.dataset.yt+'?autoplay=1&rel=0';f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';
+  f.allowFullscreen=true;f.title=a.getAttribute('aria-label');a.replaceChildren(f);a.removeAttribute('href')})});
 
-const CYR = {а:"a",б:"b",в:"v",г:"g",д:"d",е:"e",ё:"yo",ж:"j",з:"z",и:"i",й:"y",к:"k",л:"l",м:"m",н:"n",о:"o",п:"p",р:"r",с:"s",т:"t",у:"u",ф:"f",х:"x",ц:"ts",ч:"ch",ш:"sh",щ:"sh",ъ:"",ы:"i",ь:"",э:"e",ю:"yu",я:"ya",ў:"o",қ:"q",ғ:"g",ҳ:"h"};
-function latin(s){
-  return s.split("").map(ch => {
-    const lo = ch.toLowerCase(), t = CYR[lo];
-    if (t === undefined) return ch;
-    return ch === lo ? t : t.charAt(0).toUpperCase() + t.slice(1);
-  }).join("").replace(/[^A-Za-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
-}
-const firstNum = s => { const m = String(s).replace(",", ".").match(/\d+(\.\d)?/); return m ? m[0] : ""; };
-
-// start payload (max 64, A-Z a-z 0-9 _ -):
-// s{holat}d{yo'nalish}[l{til}][_i{I|T}{ball}][_t{T|S}{daraja}][_a{yosh}]_{ism}   (x = sertifikat yo'q)
-function payload(){
-  let p = `s${A.status+1}d${A.dir+1}`;
-  const f = flow();
-  if (f.includes("lang")) p += `l${A.lang+1}`;
-  if (f.includes("cert")){
-    if (A.lang === 0 || A.lang === 2){
-      const c = EN_CERTS[A.enType].code, n = firstNum(A.ielts);
-      p += "_i" + (n ? c + (c === "I" ? Math.round(parseFloat(n)*10) : parseInt(n,10)) : "x");
-    }
-    if (A.lang === 1 || A.lang === 2){
-      const c = KO_CERTS[A.koType].code, n = firstNum(A.topik);
-      p += "_t" + (n ? c + parseInt(n,10) : "x");
-    }
-  }
-  if (f.includes("age")) p += "_a" + (parseInt(A.age,10) || "x");
-  if (f.includes("tried")) p += "_v" + (A.tried + 1);
-  if (f.includes("refused")) p += "_r" + (A.refused + 1);
-  const nm = latin(A.name).slice(0, Math.max(0, 64 - p.length - 1));
-  return nm ? `${p}_${nm}` : p;
-}
-
-function chrome(){
-  const f = flow(), inQ = pos >= 0 && pos < f.length;
-  $("back").hidden = pos < 0;
-  $("count").hidden = !inQ;
-  const pct = (pos < 0 ? 0 : Math.min(pos, f.length) / f.length * 100) + "%";
-  $("rail").style.width = pct; $("plane").style.left = pct;
-  if (inQ) $("count").textContent = `${pos+1}/${f.length}`;
-}
-
-function choice(title, key, opts){
-  return `<div class="step"><h2>${title}</h2><div class="opts">${
-    opts.map((o,i) => `<button class="opt ${A[key]===i?"on":""}" id="o-${key}-${i}" data-i="${i}"><span class="key">${i+1}</span>${o}</button>`).join("")
-  }</div></div>`;
-}
-function textStep(title, fields, skipLabel){
-  return `<div class="step"><h2>${title}</h2>${
-    fields.map(f => `<div class="field">${f.label ? `<label for="f-${f.key}">${f.label}</label>` : ""}${
-      f.types ? `<div class="seg" role="group" aria-label="Sertifikat turi">${f.types.map((t,i) => `<button type="button" id="seg-${f.key}-${i}" data-k="${f.typeKey}" data-i="${i}" class="${A[f.typeKey]===i?"on":""}">${t.name}</button>`).join("")}</div>` : ""
-    }<input id="f-${f.key}" data-k="${f.key}" ${f.attrs||""} placeholder="${f.ph}" value="${esc(A[f.key])}"></div>`).join("")
-  }<div><button class="btn" id="ok">Davom etish</button><span class="hint">yoki Enter</span></div>${
-    skipLabel ? `<button class="skip" id="skip">${skipLabel}</button>` : ""}</div>`;
-}
-
-function render(){
-  chrome();
-  const m = $("main"), f = flow();
-  if (pos < 0){
-    m.innerHTML = `<div class="step">
-      <div class="me"><img src="${AVATAR}" alt="Ikhlos Khamidov"><div><b>Ikhlos Khamidov</b><span>Qabul va viza maslahatchisi</span></div></div>
-      <p class="eyebrow">한국에서 만나요 · Koreada ko'rishamiz</p>
-      <h1>Men ham shu yo'ldan o'tganman. Endi <em>sizning navbatingiz.</em></h1>
-      <p class="lead">Bir necha savolga javob bering — vaziyatingizni o'rganib, sizga bepul konsultatsiya beraman.</p>
-      <button class="btn" id="go">Bepul konsultatsiya olish →</button>
-    </div>`;
-    $("go").onclick = next; $("go").focus();
-    return;
-  }
-  if (pos >= f.length) return renderDone(m);
-  const id = f[pos];
-  if (id === "status"){ m.innerHTML = choice("Hozir nima bilan bandsiz?", "status", STATUS); bindChoice("status"); return; }
-  if (id === "dir"){ m.innerHTML = choice("Qaysi yo'nalishga topshirmoqchisiz?", "dir", DIR); bindChoice("dir"); return; }
-  if (id === "tried"){ m.innerHTML = choice("Oldin Koreya vizasiga harakat qilib ko'rganmisiz?", "tried", TRIED); bindChoice("tried"); return; }
-  if (id === "refused"){ m.innerHTML = choice("Oldin Koreya vizasidan otkaz olganmisiz?", "refused", REFUSED); bindChoice("refused"); return; }
-  if (id === "lang"){ m.innerHTML = choice("Qaysi tilni bilasiz?", "lang", LANG); bindChoice("lang"); return; }
-
-  let html, required;
-  if (id === "name"){
-    html = textStep("Tanishib olaylik. Ismingiz nima?", [{key:"name", ph:"Masalan: Aziz", attrs:'autocomplete="given-name" maxlength="40"'}]);
-    required = ["name"];
-  } else if (id === "cert"){
-    const fs = [];
-    if (A.lang === 0 || A.lang === 2) fs.push({key:"ielts", label: A.lang === 2 ? "Ingliz tili" : "", types:EN_CERTS, typeKey:"enType", ph:EN_CERTS[A.enType].ph, attrs:'maxlength="20"'});
-    if (A.lang === 1 || A.lang === 2) fs.push({key:"topik", label: A.lang === 2 ? "Koreys tili" : "", types:KO_CERTS, typeKey:"koType", ph:KO_CERTS[A.koType].ph, attrs:'maxlength="20"'});
-    const t = A.lang === 0 ? "Ingliz tili sertifikatingiz bormi?" : A.lang === 1 ? "Koreys tili sertifikatingiz bormi?" : "Sertifikatlaringiz bormi?";
-    html = textStep(t, fs, "Hozircha sertifikatim yo'q");
-    required = fs.map(x => x.key); required.any = true;
-  } else if (id === "age"){
-    html = textStep("Yoshingiz nechada?", [{key:"age", ph:"Masalan: 19", attrs:'inputmode="numeric" maxlength="2"'}]);
-    required = ["age"];
-  }
-  m.innerHTML = html;
-  const inputs = [...m.querySelectorAll("input")], ok = $("ok");
-  const valid = () => required.any ? required.some(k => A[k].trim()) : required.every(k => A[k].trim());
-  const sync = () => { ok.disabled = !valid(); };
-  inputs.forEach(inp => {
-    inp.oninput = () => { A[inp.dataset.k] = inp.dataset.k === "age" ? inp.value.replace(/\D/g,"") : inp.value; if (inp.dataset.k === "age") inp.value = A.age; sync(); };
-    inp.onkeydown = e => { if (e.key === "Enter" && valid()) next(); };
-  });
-  ok.onclick = next;
-  m.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
-    const k = b.dataset.k, i = +b.dataset.i;
-    A[k] = i;
-    b.parentElement.querySelectorAll("button").forEach((x,j) => x.classList.toggle("on", j === i));
-    const inp = b.parentElement.nextElementSibling;
-    inp.placeholder = (k === "enType" ? EN_CERTS : KO_CERTS)[i].ph;
-    inp.focus();
-  });
-  if ($("skip")) $("skip").onclick = () => { required.forEach(k => A[k] = ""); A.noCert = true; next(); };
-  sync();
-  setTimeout(() => inputs[0] && inputs[0].focus(), 50);
-}
-
-function bindChoice(key){
-  document.querySelectorAll(".opt").forEach(b => b.onclick = () => pick(key, +b.dataset.i));
-}
-function pick(key, i){
-  A[key] = i;
-  if (key === "lang" || key === "dir"){ A.ielts = ""; A.topik = ""; A.noCert = false; }
-  document.querySelectorAll(".opt").forEach((b,j) => b.classList.toggle("on", j === i));
-  setTimeout(next, 220);
-}
-
-function renderDone(m){
-  const f = flow();
-  const rows = [["Holat", STATUS[A.status]], ["Yo'nalish", DIR[A.dir]]];
-  if (f.includes("lang")) rows.push(["Til", LANG[A.lang]]);
-  if (f.includes("cert")){
-    if (A.lang === 0 || A.lang === 2) rows.push([A.ielts.trim() ? EN_CERTS[A.enType].name : "Ingliz tili sertifikati", A.ielts.trim() || "Yo'q"]);
-    if (A.lang === 1 || A.lang === 2) rows.push([A.topik.trim() ? KO_CERTS[A.koType].name : "Koreys tili sertifikati", A.topik.trim() || "Yo'q"]);
-  }
-  if (f.includes("age")) rows.push(["Yosh", A.age]);
-  if (f.includes("tried")) rows.push(["Oldingi viza", TRIED[A.tried]]);
-  if (f.includes("refused")) rows.push(["Otkaz", REFUSED[A.refused]]);
-  const link = `https://t.me/${BOT_USERNAME}?start=${payload()}`;
-  m.innerHTML = `<div class="step">
-    <div class="stamp" aria-label="Ariza qabul qilindi"><b>Ariza qabul qilindi</b><span>접수 완료 · ${today()}</span></div>
-    <h2>Rahmat, ${esc(A.name.trim())}! Bepul konsultatsiyani Telegramda beraman.</h2>
-    <div class="summary">${rows.map(r => `<div class="row"><span>${r[0]}</span><b>${esc(r[1])}</b></div>`).join("")}</div>
-    <a class="btn tg" id="tg" href="${link}" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13 1.4 11.5c-1-.3-1.1-1 .2-1.5L20.6 2.7c.9-.3 1.6.2 1.3 1.6z"/></svg>
-      Telegramda arizani yuborish</a>
-    <p class="small">Telegram ochiladi — faqat <b>START</b> tugmasini bosing.</p>
-  </div>`;
-}
-
-function today(){ const d = new Date(); return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`; }
-function next(){ pos++; render(); }
-$("back").onclick = () => { pos--; render(); };
-document.addEventListener("keydown", e => {
-  const f = flow(); if (pos < 0 || pos >= f.length) return;
-  const id = f[pos], opts = {status:STATUS, dir:DIR, lang:LANG, tried:TRIED, refused:REFUSED}[id];
-  if (!opts) return;
-  const n = parseInt(e.key, 10);
-  if (n >= 1 && n <= opts.length) pick(id, n - 1);
-});
-render();
+const lb=document.querySelector('.lb');if(lb){const li=lb.querySelector('img');let back=null;
+  const close=()=>{lb.hidden=true;li.removeAttribute('src');back&&back.focus()};
+  document.querySelectorAll('.r-open').forEach(b=>b.addEventListener('click',()=>{back=b;li.src=b.dataset.full;li.alt=b.getAttribute('aria-label');lb.hidden=false;lb.querySelector('.lb-x').focus()}));
+  lb.addEventListener('click',e=>{if(e.target!==li)close()});addEventListener('keydown',e=>{if(e.key==='Escape'&&!lb.hidden)close()});}
+if(rm||!('IntersectionObserver' in window))return;
+document.querySelectorAll('.stat b').forEach(b=>{const m=b.textContent.trim().match(/^(\d+)(.*)$/);if(!m||+m[1]>999)return;
+  const n=+m[1],suf=m[2];const o=new IntersectionObserver(es=>{if(!es[0].isIntersecting)return;o.disconnect();let st=null;
+  const step=t=>{if(st===null)st=t;const p=Math.min(1,(t-st)/1000);b.textContent=Math.round(n*(1-Math.pow(1-p,3)))+suf;if(p<1)requestAnimationFrame(step)};
+  requestAnimationFrame(step)});o.observe(b)});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;const el=e.target;el.classList.add('in');io.unobserve(el);
+  setTimeout(()=>{el.classList.remove('rv','in');el.style.transitionDelay=''},1200)}),{rootMargin:'0px 0px -8% 0px'});
+const sel='.head,.card,.why>div,.steps li,.gallery .g,.student,.timeline li,.faq details,.reviews .r,.about-card,.honest,.cta-box';
+[...document.querySelectorAll(sel)].forEach((el,i)=>{if(el.getBoundingClientRect().top<innerHeight*.92)return;
+  el.classList.add('rv');el.style.transitionDelay=(i%4)*80+'ms';io.observe(el)});
+})();
 </script>
-
 </body>
 </html>
