@@ -274,26 +274,15 @@ function pick(key, i){
 }
 
 function renderDone(m){
-  const f = flow();
-  const rows = [["Holat", STATUS[A.status]], ["Yo'nalish", DIR[A.dir]]];
-  if (f.includes("lang")) rows.push(["Til", LANG[A.lang]]);
-  if (f.includes("cert")){
-    if (A.lang === 0 || A.lang === 2) rows.push([A.ielts.trim() ? EN_CERTS[A.enType].name : "Ingliz tili sertifikati", A.ielts.trim() || "Yo'q"]);
-    if (A.lang === 1 || A.lang === 2) rows.push([A.topik.trim() ? KO_CERTS[A.koType].name : "Koreys tili sertifikati", A.topik.trim() || "Yo'q"]);
-  }
-  if (f.includes("age")) rows.push(["Yosh", A.age]);
-  if (f.includes("tried")) rows.push(["Oldingi viza", TRIED[A.tried]]);
-  if (f.includes("refused")) rows.push(["Otkaz", REFUSED[A.refused]]);
   const link = `https://t.me/${BOT_USERNAME}?start=${payload()}`;
   m.innerHTML = `<div class="step">
-    <div class="stamp" aria-label="Ariza qabul qilindi"><b>Ariza qabul qilindi</b><span>접수 완료 · ${today()}</span></div>
-    <h2>Rahmat, ${esc(A.name.trim())}! Bepul konsultatsiyani Telegramda beraman.</h2>
-    <div class="summary">${rows.map(r => `<div class="row"><span>${r[0]}</span><b>${esc(r[1])}</b></div>`).join("")}</div>
-    <a class="btn tg" id="tg" href="${link}" target="_blank" rel="noopener">
+    <h2>Telegram ochilmoqda…</h2>
+    <p class="small">Agar Telegram o'zi ochilmasa, tugmani bosing va <b>START</b> ni bosing.</p>
+    <a class="btn tg" id="tg" href="${link}" rel="noopener">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.9 4.3 18.7 19.4c-.2 1.1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.3-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.2 13 1.4 11.5c-1-.3-1.1-1 .2-1.5L20.6 2.7c.9-.3 1.6.2 1.3 1.6z"/></svg>
-      Telegramda arizani yuborish</a>
-    <p class="small">Telegram ochiladi — faqat <b>START</b> tugmasini bosing.</p>
+      Telegramni ochish</a>
   </div>`;
+  setTimeout(() => { location.href = link; }, 300);
 }
 
 function today(){ const d = new Date(); return `${String(d.getDate()).padStart(2,"0")}.${String(d.getMonth()+1).padStart(2,"0")}.${d.getFullYear()}`; }
