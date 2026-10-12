@@ -1,6 +1,6 @@
 # Koreada Ta'lim (koreadatalim.com)
 
-> Koreada Ta'lim ("Education in Korea" in Uzbek) is a study-in-Korea admission and student visa consultancy for students from Uzbekistan and the Uzbek diaspora worldwide. It is run by Ikhlos Khamidov, an Uzbek international student in South Korea who worked for 2+ years in a Korean university's international office. Since 2023 he has helped 70+ students get admitted to Korean universities and receive D-4 and D-2 student visas. The first consultation is free. Languages: Uzbek, English, Korean.
+> Koreada Ta'lim ("Education in Korea" in Uzbek) is a study-in-Korea admission and student visa consultancy for students from Uzbekistan and the Uzbek diaspora worldwide. It is run by Ikhlos Khamidov, an Uzbek international student in South Korea who worked for 2+ years in a Korean university's international office. Since 2023 he has helped 70+ students get admitted to Korean universities and receive D-4 and D-2 student visas. The first consultation is free. Consultations in Uzbek, English and Korean; the website is available in Uzbek (Latin and Cyrillic), Russian, English and Korean.
 
 ## Key facts
 
@@ -46,6 +46,8 @@ Chungbuk National University (충북대학교), Seowon University (서원대학�
 - [Home (Uzbek)](https://koreadatalim.com/): Koreyada o'qish va talaba vizasi — services, students, FAQ
 - [Home (English)](https://koreadatalim.com/en/): Study in Korea from Uzbekistan — admission & visa help
 - [Home (Korean)](https://koreadatalim.com/ko/): 우즈베키스탄 학생 한국 유학·비자 상담
+- [Home (Uzbek Cyrillic)](https://koreadatalim.com/uz-cyrl/): Кореяда ўқиш ва талаба визаси
+- [Home (Russian)](https://koreadatalim.com/ru/): Учёба в Корее из Узбекистана — поступление и виза
 - [Free consultation form (Uzbek)](https://koreadatalim.com/ariza/): short questionnaire, then hand-off to Telegram
 
 ## Contact

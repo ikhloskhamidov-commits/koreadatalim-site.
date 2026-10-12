@@ -4,6 +4,8 @@
     <loc>https://koreadatalim.com/</loc>
     <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"/>
+    <xhtml:link rel="alternate" hreflang="uz-Cyrl" href="https://koreadatalim.com/uz-cyrl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://koreadatalim.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"/>
@@ -11,9 +13,31 @@
     <image:image><image:loc>https://koreadatalim.com/assets/founder.jpg</image:loc></image:image>
   </url>
   <url>
+    <loc>https://koreadatalim.com/uz-cyrl/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"/>
+    <xhtml:link rel="alternate" hreflang="uz-Cyrl" href="https://koreadatalim.com/uz-cyrl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://koreadatalim.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"/>
+  </url>
+  <url>
+    <loc>https://koreadatalim.com/ru/</loc>
+    <lastmod>2026-10-12</lastmod>
+    <xhtml:link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"/>
+    <xhtml:link rel="alternate" hreflang="uz-Cyrl" href="https://koreadatalim.com/uz-cyrl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://koreadatalim.com/ru/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"/>
+  </url>
+  <url>
     <loc>https://koreadatalim.com/en/</loc>
     <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"/>
+    <xhtml:link rel="alternate" hreflang="uz-Cyrl" href="https://koreadatalim.com/uz-cyrl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://koreadatalim.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"/>
@@ -22,6 +46,8 @@
     <loc>https://koreadatalim.com/ko/</loc>
     <lastmod>2026-10-12</lastmod>
     <xhtml:link rel="alternate" hreflang="uz" href="https://koreadatalim.com/"/>
+    <xhtml:link rel="alternate" hreflang="uz-Cyrl" href="https://koreadatalim.com/uz-cyrl/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://koreadatalim.com/ru/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://koreadatalim.com/en/"/>
     <xhtml:link rel="alternate" hreflang="ko" href="https://koreadatalim.com/ko/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://koreadatalim.com/"/>
