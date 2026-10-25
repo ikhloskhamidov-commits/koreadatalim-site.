@@ -74,4 +74,4 @@ _Filled in once two or more styles share something._
 
 | Name | File | Reference | Summary |
 |------|------|-----------|---------|
-| _(not named yet)_ | styles/unnamed-ref1.md | English real-estate talking-head Reel, 15 s, 9:16 | Fast (new visual every ~1.5 s), big yellow typewriter keyword subtitles, literal graphics and B-roll for every phrase, SFX on every change |
+| yangicha | styles/yangicha.md | English real-estate talking-head Reel, 15 s, 9:16 | Fast (new visual every ~1.5 s), big yellow typewriter keyword subtitles, literal graphics and B-roll for every phrase, SFX on every change |

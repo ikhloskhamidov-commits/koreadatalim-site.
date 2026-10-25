@@ -1,6 +1,6 @@
-# unnamed-ref1 (not named yet)
+# yangicha
 
-Status: analyzed, waiting for a name. Ikhlos first wants to test this style on one of his own talking-head videos, then name it. When he names it, rename this file to `styles/<name>.md` and add it to "Style index" in SKILL.md.
+Named by Ikhlos on 2026-10-25. Not yet tested on his own footage; the first edit in this style is a test, so ask for feedback afterwards and update this file with what he changes.
 
 Reference: English real-estate talking-head Reel ("what's the difference between home inspection and appraisal"), analyzed 2026-10-25. 15.2 s, 9:16 (720x1280), 23.98 fps.
 Overall feel: fast, dense, "something new every ~1.5 s". One static camera (no punch-ins); the variety comes entirely from graphics, B-roll and big yellow keyword subtitles. Speaker alone on screen only ~40% of the time.
